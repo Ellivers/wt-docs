@@ -1,0 +1,8 @@
+{
+  "label": "General Tool",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "A basic tool that lets you select two positions."
+  }
+}

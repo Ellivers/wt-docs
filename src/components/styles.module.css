@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Minecraft Seven';
+    src: url(@site/static/font/MinecraftSeven.woff);
+}
+
+.mcfont {
+    font-family: 'Minecraft Seven';
+    font-size: 100%;
+    vertical-align: baseline;
+    padding-bottom: 6px;
+    padding-right: 3px;
+    background-color: gray;
+    line-height: 170%;
+}
