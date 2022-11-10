@@ -32,3 +32,7 @@ In order to use WorldTool in a custom dimension, you need to:
 [General Tool](category/general-tool) - Operations that involve an area made up of two corner points.<br></br>
 [Brush Tool](category/brush-tool) - Quick operations that can be applied to a cube radius by simply right-clicking.<br></br>
 [Shape Generation Tool](category/shape-generation-tool) - Slower operations that involve generating 3D shapes.
+
+:::tip tool controls
+You can see what actions you can perform with each tool's item by hovering over it in your inventory and looking at the tooltip.
+:::

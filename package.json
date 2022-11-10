@@ -1,6 +1,6 @@
 {
-  "name": "worldtool-docs-new",
-  "version": "0.0.0",
+  "name": "worldtool-docs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

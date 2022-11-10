@@ -16,7 +16,7 @@ If both positions have been set, the <MCFont color="green">[Use...]</MCFont> but
 #
 
 :::tip
-This menu is opened whenever the General Tool is right-clicked. You can **aim into the sky** to open this menu without having to set a position.
+This menu is opened whenever the General Tool is right-clicked. You can **aim into the sky** to open this menu without having to set a position. Alternatively, you can **sneak and drop the tool** while on the ground to open it.
 :::
 
 [Click](../chat-menu-system) the <MCFont color="green">[Use...]</MCFont> button to open the General Tool's main menu.
