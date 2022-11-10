@@ -4,7 +4,7 @@ sidebar_position: 2
 
 import MCFont from '@site/src/components/minecraft-font'
 
-# Chat menu system
+# Chat Menu System
 
 WorldTool uses a chat-based menu system. Here's what you'll need to know:
 #

@@ -17,13 +17,15 @@ const colors: {[key: string]: string} = {
     light_purple: '#FF55FF',
 }
 
-export default function MCFont(props: props) {
+const MCFont = (props: props) => {
     const color = colors[props.color] || props.color || 'white';
     console.log(tinycolor(color).darken(0.75).toString());
 
     return (
-        <code className={styles.mcfont} style={{color: color, textShadow: `2px 2px 0 ${tinycolor(color).darken(75).toString()}`}}>
+        <code className={styles.mcfont} style={{color: color, textShadow: `2px 2px 0 ${tinycolor(color).darken(55).toString()}`}}>
             {props.children}
         </code>
     )
 }
+
+export default MCFont;
