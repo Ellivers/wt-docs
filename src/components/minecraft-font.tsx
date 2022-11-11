@@ -15,6 +15,7 @@ const colors: {[key: string]: string} = {
     blue: '#5555FF',
     dark_blue: '#0000AA',
     light_purple: '#FF55FF',
+    red: '#FF5555',
 }
 
 const MCFont = (props: props) => {
@@ -22,7 +23,7 @@ const MCFont = (props: props) => {
     console.log(tinycolor(color).darken(0.75).toString());
 
     return (
-        <code className={styles.mcfont} style={{color: color, textShadow: `2px 2px 0 ${tinycolor(color).darken(55).toString()}`}}>
+        <code className={styles.mcfont} style={{color: color, textShadow: `1.625px 1.625px 0 ${tinycolor(color).darken(55).toString()}`}}>
             {props.children}
         </code>
     )

@@ -41,13 +41,28 @@ The <MCFont color="#9729ff">[Particle Outline]</MCFont> option toggles whether t
 
 ## Settings
 
-Main page: [Settings](../settings/main)
+Main page: [Settings](../settings/main).
 
 ## Adjust Positions
 
 The Adjust Positions menu allows you to nudge or set one or both positions.<br></br>
 ![The Adjust Positions menu](img/placeholder.png)
 
-At the top of the menu, the current positions of corners 1 and 2 are displayed.
+At the top of the menu, the current positions 1 and 2 are displayed.
 
+The <MCFont color="aqua">&lt;Set Positions&gt;</MCFont> button opens a menu prompt that allows you to manually set both positions at once.
 
+<MCFont color="green">[Swap Positions]</MCFont> swaps both positions, in case you need that.
+
+### Nudging
+The <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Position 2]</MCFont> buttons toggle nudging each position. You can choose to nudge both positions 1 and 2, or only one of them.
+#
+<MCFont color="gold">[-X]</MCFont><MCFont color="gold">[+X]</MCFont><br></br>
+<MCFont color="gold">[-Y]</MCFont><MCFont color="gold">[+Y]</MCFont><br></br>
+<MCFont color="gold">[-Z]</MCFont><MCFont color="gold">[+Z]</MCFont>
+<br></br>
+Using these buttons will move the positions selected with the <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Position 2]</MCFont> toggle buttons accordingly.
+
+## Kill Process
+
+The <MCFont color="red">[Kill Process]</MCFont> button kills the currently running process, if there is one. Main page: [Processes](../technical/processes).
