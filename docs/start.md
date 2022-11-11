@@ -13,15 +13,15 @@ WorldTool is a world-editing data pack for Minecraft with a large variety of fea
 
 ## Setup
 
-* If you do not know how to install a data pack, refer to a guide such as [this one](https://www.planetminecraft.com/blog/how-to-download-and-install-minecraft-data-packs/).
-* Make sure you have cheats (singleplayer) or are an operator (server).
+* [Download](https://datapackcenter.com/projects/worldtool.149/download) WorldTool. If you do not know how to install a data pack, refer to a guide such as [this one](https://www.planetminecraft.com/blog/how-to-download-and-install-minecraft-data-packs/).
+* Make sure you have cheats enabled (singleplayer) or are an operator (server).
 * To finalize the installation of WorldTool, use the `/reload` command in-game, or restart the world.
 * Run the command `/function worldtool:give` in-game to recieve all the necessary tools to start your world editing!
 
 
 ## Custom Dimensions
 
-In order to use WorldTool in a custom dimension, you need to:
+In order to be able to use WorldTool in a custom dimension, you need to:
 1. Be in said dimension
 2. Run the command `/forceload add 27450 19`
 3. Wait a few seconds

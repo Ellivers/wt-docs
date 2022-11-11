@@ -6,17 +6,18 @@ import MCFont from '@site/src/components/minecraft-font'
 
 # Usage
 
-The General Tool can be used to place a **position 1** and a **position 2** by right-clicking whilst holding the item.
+The General Tool (has the item name "Set Position 1" or "Set Position 2") can be used to place a **position 1** and a **position 2** by right-clicking on blocks whilst holding the item in your main hand.
 
-Drop the tool to switch the position you place.<br></br>
+**Drop the tool** to switch the position you place.<br></br>
 ![Drop the tool to switch between these two](img/placeholder.png)
-#
-If both positions have been set, the <MCFont color="green">[Use...]</MCFont> button in this menu should be green.<br></br>
-![The menu in question](img/initial_menu.png)
-#
+## Initial menu
+If both positions have been set, the <MCFont color="green">[Use...]</MCFont> button in this right-click menu should be green.<br></br>
+![The initial General Tool menu](img/initial_menu.png)
+
+You can use the <MCFont color="yellow">[Set Position 1 Here]</MCFont> and <MCFont color="yellow">[Set Position 2 Here]</MCFont> buttons to set either of the positions to your current player position.
 
 :::tip
-This menu is opened whenever the General Tool is right-clicked. You can **aim into the sky** to open this menu without having to set a position. Alternatively, you can **sneak and drop the tool** while on the ground to open it.
+Since this menu is opened whenever the General Tool is right-clicked, you can **aim into the sky** and right-click to open this menu without having to set a position. Alternatively, you can **sneak and drop the tool** while standing on the ground.
 :::
 
 [Click](../chat-menu-system) the <MCFont color="green">[Use...]</MCFont> button to open the General Tool's main menu.

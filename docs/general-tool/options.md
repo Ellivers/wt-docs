@@ -6,20 +6,19 @@ import MCFont from '@site/src/components/minecraft-font'
 
 # Options
 
-The options menu:<br></br>
+The Options menu can be reached with the <MCFont color="aqua">[Options...]</MCFont> button in the [General Tool's initial menu](usage#initial-menu).
+#
+The Options menu:<br></br>
 ![The options menu](img/options_menu.png)
-
-The options menu can be reached with the <MCFont color="aqua">[Options...]</MCFont> button in this menu:<br></br>
-![Menu with the use and option buttons](img/initial_menu.png)
 
 ## Undo and Redo
 
 The first features of this menu are the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> buttons.
 
-Pretty self-explanatorily, these will undo or redo the changes you've made using WorldTool's tools. [<u>Technical details</u>](../technical/area-storage-system)
+Pretty self-explanatorily, these will undo or redo the changes you've made using WorldTool's tools.
 
-:::caution backups
-The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> functionality **will be lost** if the data pack is reloaded by either using `/reload` or restarting the world.
+:::info backups
+The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> functionality **will be lost** if the data pack is reloaded by either using the `/reload` command or restarting the world.
 :::
 
 ## Copy and Paste
@@ -46,13 +45,13 @@ Main page: [Settings](../settings/main).
 ## Adjust Positions
 
 The Adjust Positions menu allows you to nudge or set one or both positions.<br></br>
-![The Adjust Positions menu](img/placeholder.png)
+![The Adjust Positions menu](img/adjust_positions_menu.png)
 
 At the top of the menu, the current positions 1 and 2 are displayed.
 
 The <MCFont color="aqua">&lt;Set Positions&gt;</MCFont> button opens a menu prompt that allows you to manually set both positions at once.
 
-<MCFont color="green">[Swap Positions]</MCFont> swaps both positions, in case you need that.
+<MCFont color="#4cd10f">[Swap Positions]</MCFont> swaps both positions, in case you need that.
 
 ### Nudging
 The <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Position 2]</MCFont> buttons toggle nudging each position. You can choose to nudge both positions 1 and 2, or only one of them.
