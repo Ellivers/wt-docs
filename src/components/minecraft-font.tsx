@@ -10,12 +10,14 @@ interface props {
 const colors: {[key: string]: string} = {
     green: '#55FF55',
     aqua: '#55FFFF',
+    dark_aqua: '#00AAAA',
     yellow: '#FFFF55',
     gold: '#FFAA00',
     blue: '#5555FF',
     dark_blue: '#0000AA',
     light_purple: '#FF55FF',
     red: '#FF5555',
+    gray: '#AAAAAA',
 }
 
 const MCFont = (props: props) => {

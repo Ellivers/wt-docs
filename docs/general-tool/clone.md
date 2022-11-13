@@ -19,7 +19,7 @@ The <MCFont>Mode</MCFont> option allows you to choose between two different clon
 The <MCFont color="green">Template</MCFont> mode is faster, and rotates individual blocks properly, unlike the other mode. However, the area can only be rotated around the Y axis and mirrored on the X and Z axes, multiple rotations and/or mirror directions cannot be applied at the same time, and the filter functionality is not supported.
 
 ## Filter
-The <MCFont color="gold">[Filter]</MCFont> button lets you enable a filter to either only clone a certain block (<MCFont color="green">[Normal]</MCFont>), or clone all blocks except a certain block (<MCFont color="gold">[Exclude]</MCFont>). Once enabled, the filter can be disabled by clicking the button again.
+The <MCFont color="gold">[Filter]</MCFont> option lets you enable a filter to either only clone a certain block (<MCFont color="green">[Normal]</MCFont>), or clone all blocks except a certain block (<MCFont color="gold">[Exclude]</MCFont>). Once enabled, the filter can be disabled by clicking the button again.
 
 ## Rotating
 This rotation menu can be opened through the <MCFont color="#9122d6">[Rotate...]</MCFont> button.<br></br>

@@ -23,7 +23,7 @@ The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and
 
 ## Copy and Paste
 
-The <MCFont color="aqua">[▶Copy Area]</MCFont> and <MCFont color="#06c248">[Paste Area...]</MCFont> buttons allow you to save a copy of the currently selected area and paste it elsewhere.
+The <MCFont color="aqua">[▶Copy Area]</MCFont> and <MCFont color="#06c248">[Paste Area...]</MCFont> buttons allow you to save a copy of the currently selected area and paste it elsewhere. This copy **will be deleted** if the data pack is reloaded by either using the `/reload` command or restarting the world.
 #
 When pressing the <MCFont color="#06c248">[Paste Area...]</MCFont> button, this menu will show up:<br></br>
 ![The pasting menu](img/paste_menu.png)

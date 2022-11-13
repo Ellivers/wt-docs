@@ -30,3 +30,8 @@ Here in the **main menu** is where you can find all the different **operations**
 At the bottom you can flip through 2 pages to find what you're looking for, with the second page containing more specific and niche operations.
 #
 The <MCFont color="#0aad02">[Keep]</MCFont> option at the top of the menu lets you toggle whether to replace existing blocks. This option generally works with every operation, but there are some exceptions.
+
+## Particles
+While in a menu, the area is marked with particles (if not disabled). The blue corner marks position 1, while the orange corner marks position 2.
+#
+![The area particles](img/placeholder.png)
