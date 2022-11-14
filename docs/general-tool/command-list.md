@@ -4,9 +4,9 @@ sidebar_position: 16
 
 import MCFont from '@site/src/components/minecraft-font'
 
-# Command Block Chain List
+# Command List
 
-The <MCFont color="#76b297">[▶Command Block Chain List]</MCFont> button can be found in the [main General Tool menu](usage#main-menu)'s second page. This operation finds all command block chains in the selected area, makes a list of their content, and displays it in chat.
+The <MCFont color="#76b297">[▶Command List]</MCFont> button can be found in the [main General Tool menu](usage#main-menu)'s second page. This operation finds all command block chains that start in the selected area (this includes singular regular command blocks as well), makes a list of their content, and displays it in chat.
 
 ## Converting Lists
 
