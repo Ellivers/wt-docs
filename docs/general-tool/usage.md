@@ -9,7 +9,7 @@ import MCFont from '@site/src/components/minecraft-font'
 The General Tool (has the item name "Set Position 1" or "Set Position 2") can be used to place a **position 1** and a **position 2** by right-clicking on blocks whilst holding the item in your main hand.
 
 **Drop the tool** to switch the position you place.<br></br>
-![Drop the tool to switch between these two](img/placeholder.png)
+![Drop the tool to switch between these two](img/position_swapping_instructions.png)
 ## Initial menu
 If both positions have been set, the <MCFont color="green">[Use...]</MCFont> button in this right-click menu should be green.<br></br>
 ![The initial General Tool menu](img/initial_menu.png)
@@ -23,7 +23,10 @@ Since this menu is opened whenever the General Tool is right-clicked, you can **
 [Click](../chat-menu-system) the <MCFont color="green">[Use...]</MCFont> button to open the General Tool's main menu.
 
 ## Main menu
-![The main General Tool menu](img/main_menu.png)
+Page 1:<br></br>
+![The main General Tool menu page 1](img/main_menu_page_1.png)<br></br>
+Page 2:<br></br>
+![The main General Tool menu page 2](img/main_menu_page_2.png)
 
 Here in the **main menu** is where you can find all the different **operations** the General Tool can perform.
 

@@ -10,7 +10,7 @@ The Shell menu can be found with the <MCFont color="yellow">[Shell...]</MCFont> 
 #
 ![The Shell menu](img/shell_menu.png)
 
-The [block selection menu](../chat-menu-system#block-selection) at the start of the menu will start the Shell operation once you select a block with it.
+The [block selection menu](../chat-menu-system#block-selection) at the start of the menu starts the Shell operation once you select a block with it.
 
 ## Inner Block
 The <MCFont color="gold">[Inner Block]</MCFont> option lets you select a block to fill the inside of the area with. Once this option is on, you can use the button again to turn it off.

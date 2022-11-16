@@ -1,0 +1,8 @@
+{
+  "label": "Brush Tool",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "A tool that lets you right-click on blocks for quick usage."
+  }
+}
