@@ -5,6 +5,7 @@ sidebar_position: 9
 import MCFont from '@site/src/components/minecraft-font'
 
 # Shell
+![Example of what this operation can look like](img/operation_previews/shell.png)
 
 The Shell menu can be found with the <MCFont color="yellow">[Shell...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation creates blocks around the area's sides.
 #

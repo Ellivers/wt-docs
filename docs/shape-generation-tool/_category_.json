@@ -1,0 +1,8 @@
+{
+  "label": "Shape Generation Tool",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "A tool that lets you generate 3D shapes."
+  }
+}

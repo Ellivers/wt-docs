@@ -19,6 +19,7 @@ const colors: {[key: string]: string} = {
     red: '#FF5555',
     gray: '#AAAAAA',
     dark_purple: '#AA00AA',
+    dark_green: '#00AA00',
 }
 
 const MCFont = (props: props) => {

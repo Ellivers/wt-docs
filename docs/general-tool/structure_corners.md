@@ -5,6 +5,7 @@ sidebar_position: 16
 import MCFont from '@site/src/components/minecraft-font'
 
 # Structure Corners
+![Example of what this operation can look like](img/operation_previews/structure_corners.png)
 
 The Structure Corners menu can be found with the <MCFont color="#3a2ffa">[Structure Corners...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation places two structure blocks in corner mode outside the corners of the selected area, that can be used to quickly save an area as a structure.
 #

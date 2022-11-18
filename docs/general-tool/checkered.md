@@ -5,6 +5,7 @@ sidebar_position: 12
 import MCFont from '@site/src/components/minecraft-font'
 
 # Checkered
+![Example of what this operation can look like](img/operation_previews/checkered.png)
 
 The Checkered menu can be found with the <MCFont color="#fc03cf">[Checkered...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation places a block every other block, making a checkered or striped pattern.
 #

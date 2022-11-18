@@ -5,6 +5,7 @@ sidebar_position: 13
 import MCFont from '@site/src/components/minecraft-font'
 
 # Greenery
+![Example of what this operation can look like](img/operation_previews/greenery.png)
 
 The Greenery menu can be found with the <MCFont color="green">[Greenery...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation places greenery from a selected biome source above blocks in the selection that can be planted on.
 #
@@ -14,14 +15,14 @@ The Greenery menu can be found with the <MCFont color="green">[Greenery...]</MCF
 The <MCFont>Plant rate</MCFont> option lets you set the percentage chance for each block to have greenery placed on it.
 
 ## Remove Current Greenery
-If the <MCFont color="light_purple">[Remove Current Greenery]</MCFont> option is enabled, all greenery in the area will be removed before new greenery is placed.
+If the <MCFont color="light_purple">[Remove Current Greenery]</MCFont> option is enabled, all greenery in the area is removed before new greenery is placed.
 
 ::tip
 Setting the <MCFont>Plant rate</MCFont> to 0 and enabling <MCFont color="light_purple">[Remove Current Greenery]</MCFont> lets you remove all greenery in the area without placing any.
 ::
 
 ## Replace
-The <MCFont color="gold">[Replace]</MCFont> option lets you choose which blocks to replace with greenery. Either choose a certain block to replace (<MCFont color="green">[Normal]</MCFont>), or a certain block to *not* replace (<MCFont color="gold">[Exclude]</MCFont>). Once the option is enabled, clicking the button again will disable it.
+The <MCFont color="gold">[Replace]</MCFont> option lets you choose which blocks to replace with greenery. Either choose a certain block to replace (<MCFont color="green">[Normal]</MCFont>), or a certain block to *not* replace (<MCFont color="gold">[Exclude]</MCFont>). Once the option is enabled, clicking the button again disables it.
 
 ## Plant Sources
 Plant sources are different biomes you can select to get greenery from, with each source having different blocks with different spawn ratios. The <MCFont color="green">[Change...]</MCFont> button opens a menu where you can change what plant source to use.

@@ -15,7 +15,7 @@ The Options menu:<br></br>
 
 The first features of this menu are the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> buttons.
 
-Pretty self-explanatorily, these will undo or redo the changes you've made using WorldTool's tools.
+Pretty self-explanatorily, these undo or redo the changes you've made using WorldTool's tools.
 
 :::info backups
 The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> functionality **will be lost** if the data pack is reloaded by either using the `/reload` command or restarting the world.
@@ -25,10 +25,10 @@ The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and
 
 The <MCFont color="aqua">[▶Copy Area]</MCFont> and <MCFont color="#06c248">[Paste Area...]</MCFont> buttons allow you to save a copy of the currently selected area and paste it elsewhere. This copy **will be deleted** if the data pack is reloaded by either using the `/reload` command or restarting the world.
 #
-When pressing the <MCFont color="#06c248">[Paste Area...]</MCFont> button, this menu will show up:<br></br>
+When pressing the <MCFont color="#06c248">[Paste Area...]</MCFont> button, this menu is opened:<br></br>
 ![The pasting menu](img/paste_menu.png)
 
-Here, you can choose where to paste the area. If you have particles enabled, you'll see a box showing you how the area will be pasted, relative to your current position.
+Here, you can choose where to paste the area. If you have particles enabled, you see a box showing you how the area will be pasted, relative to your current position.
 
 <MCFont color="aqua">[▶Paste at Position 1]</MCFont> pastes the area at your selected first position.<br></br>
 <MCFont color="yellow">[▶Paste Here]</MCFont> pastes the area at your player position.<br></br>
@@ -58,9 +58,8 @@ The <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Pos
 #
 <MCFont color="gold">[-X]</MCFont><MCFont color="gold">[+X]</MCFont><br></br>
 <MCFont color="gold">[-Y]</MCFont><MCFont color="gold">[+Y]</MCFont><br></br>
-<MCFont color="gold">[-Z]</MCFont><MCFont color="gold">[+Z]</MCFont>
-<br></br>
-Using these buttons will move the positions selected with the <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Position 2]</MCFont> toggle buttons accordingly.
+<MCFont color="gold">[-Z]</MCFont><MCFont color="gold">[+Z]</MCFont><br></br>
+Using these buttons moves the positions selected with the <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Position 2]</MCFont> toggle buttons accordingly.
 
 ## Kill Process
 
