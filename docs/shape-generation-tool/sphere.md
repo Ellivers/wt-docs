@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
-# Cylinder
+# Sphere
 
-![An example of what a generated Cylinder could look like](img/cylinder_example.png)
+![An example of what a generated Sphere could look like](img/sphere_example.png)
 
-The cylinder shape.
+The sphere shape.
 #
 Available options:
 * Diameter

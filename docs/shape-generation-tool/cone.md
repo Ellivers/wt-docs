@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Cylinder
+# Cone
 
-![An example of what a generated Cylinder could look like](img/cylinder_example.png)
+![An example of what a generated Cone could look like](img/cone_example.png)
 
-The cylinder shape.
+The cone shape.
 #
 Available options:
 * Diameter
