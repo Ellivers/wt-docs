@@ -40,7 +40,7 @@ The <MCFont color="#9729ff">[Particle Outline]</MCFont> option toggles whether t
 
 ## Settings
 
-Main page: [Settings](../settings/main).
+Main page: [Settings](../configuration).
 
 ## Adjust Positions
 

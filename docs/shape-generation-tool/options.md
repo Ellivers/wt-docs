@@ -24,7 +24,7 @@ The <MCFont color="#9729ff">[Preview Shape]</MCFont> option toggles whether to s
 
 ## Settings
 
-Main page: [Settings](../settings/main).
+Main page: [Settings](../configuration).
 
 ## Kill Process
 
