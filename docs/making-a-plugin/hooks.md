@@ -109,4 +109,58 @@ This hook is called when the tags for returning from picking a block and putting
 If you add a tag to return from this function, you can remove it here.
 
 #### `process/greenery/check_base`
-This hook is called when .<br></br>
+This hook is called when the Greenery process checks if the base block is valid.<br></br>
+If you have a custom greenery plant source with a non-standard base block requirement, you can check for it here.
+
+#### `process/greenery/plant_tables`
+This hook is called when the Greenery process checks what plant table to use.<br></br>
+If you have a custom greenery plant source, you can call its plant table function here.
+
+#### `process/adjust_progress_bar_value`
+This hook is called when the progress bar's value is updated.<br></br>
+You can adjust the `#blocksChecked worldtool` score here to affect how much is added to the value.
+
+#### `process/check_tags`
+This hook is called when tags are checked for which process function to run.<br></br>
+Here, you can check for the tags of and run any custom processes you've added.
+
+#### `process/continue`
+This hook is called when a process is continued instead of ending.<br></br>
+Here, you can add commands to run when a process with the `wt.dont_end` tag continues.
+
+#### `process/end`
+This hook is called when a process is ended.
+
+#### `process/final_code`
+This hook is called before a process is either ended or continued.
+
+#### `process_message/display`
+This hook is called when a process message is displayed before it either ends or continues.<br></br>
+Here, you can display a custom message for your own process. If you add the `wt.message.custom_display` tag, you can disable all standard WorldTool messages that use plural for anything not 1, and singular for 1, in case you're working on translations for a language that does not follow those rules.
+
+#### `process_start/brush/area/add_tags`
+This hook is called when the type of area to select is decided.<br></br>
+Here, you can remove the `wt.brush_area.flat` and `wt.brush_area.normal` tags and then add whichever tag you want.
+
+#### `process_start/brush/area/remove_tags`
+This hook is called when the tags that decide the type of area to select are removed.<br></br>
+Here, you can call you own area selection and remove any custom area selection tags you have.
+
+#### `process_start/brush/normal_start/processes`
+This hook is called when the processes for the normal brush start system are set up.<br></br>
+Here, you can set up your own custom process, if it's selected.
+
+#### `process_start/brush/check`
+This hook is called when the brush checks what start system to use.<br></br>
+If you have a custom start system, you can call that here.
+
+#### `process_start/brush/start`
+This hook is called when the way the brush should be started is decided.<br></br>
+If you have a custom brush, you check if it's selected here, and if so, call the appropriate function.
+
+#### `process_start/shapes/processes`
+This hook is called when the processes for the Shape Generation Tool are set up.<br></br>
+Here, you can call the appropriate function if you have to a custom shape to set up.
+
+#### `process_start/common_load`
+This hook is called when the common starting system is loaded.

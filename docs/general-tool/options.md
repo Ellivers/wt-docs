@@ -21,6 +21,10 @@ Pretty self-explanatorily, these undo or redo the changes you've made using Worl
 The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> functionality **will be lost** if the data pack is reloaded by either using the `/reload` command or restarting the world.
 :::
 
+:::tip
+Don't rely on undoing, be careful with your actions.
+:::
+
 ## Copy and Paste
 
 The <MCFont color="aqua">[▶Copy Area]</MCFont> and <MCFont color="#06c248">[Paste Area...]</MCFont> buttons allow you to save a copy of the currently selected area and paste it elsewhere. This copy **will be deleted** if the data pack is reloaded by either using the `/reload` command or restarting the world.

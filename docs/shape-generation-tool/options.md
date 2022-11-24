@@ -18,6 +18,10 @@ Pretty self-explanatorily, these undo or redo the changes you've made using Worl
 The backups that are used for the <MCFont color="#036ffc">[↩Undo]</MCFont> and <MCFont color="#7c2bff">[Redo↪]</MCFont> functionality **will be lost** if the data pack is reloaded by either using the `/reload` command or restarting the world.
 :::
 
+:::tip
+Don't rely on undoing, be careful with your actions.
+:::
+
 ## Preview Shape
 
 The <MCFont color="#9729ff">[Preview Shape]</MCFont> option toggles whether to show particles to help with generating the shape, and many more things. These particles are **only visible to you**.
