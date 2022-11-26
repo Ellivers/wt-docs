@@ -12,9 +12,20 @@ A hook is a function tag under the path `worldtool:hooks/`. WorldTool has a lot 
 A list of all hooks and their potential uses, in alphabetical order. <span style={{ fontSize: '.3em' }}>Why do I do this to myself?</span><br></br>
 Search for the hook paths within the WorldTool data pack to find more context on how to use them.
 
+#### `check_cmd_processes`
+This hook is called when the validity of the entered process data is checked.<br></br>
+The process data is available through the storage `worldtool:storage`'s value `CmdProcess`.
+
 #### `cmd/start`
 This hook is called when a process not tied to a user is started.<br></br>
 Set the `#commonStart worldtool` score to `0` to prevent the common start function from loading, allowing you to run your own function. The started process is available to read through the storage `worldtool:storage`'s value `Temp.Process`.
+
+#### `drop_tool`
+This hook is called when a tool is dropped.<br></br>
+The dropped item is available through the storage `worldtool:storage`'s value `Temp.Item`.
+
+#### `give_tools`
+This hook is called when the WorldTool tools are given.
 
 #### `greenery/brush/check_source`
 This hook is called when the plant source selection menu is about to be opened with the Brush Tool.<br></br>
@@ -72,9 +83,21 @@ If you have a custom General Tool menu that uses a secondary block input, you ca
 This hook is called when the translations for the language "English (US)" are loaded.<br></br>
 Here, you can add any translations you want to add in this language.
 
+#### `language/list`
+This hook is called when available languages are listed.<br></br>
+If you have a custom language added, put a button for it here.
+
 #### `language/reload`
 This hook is called when translations are reloaded.<br></br>
 If your plugins adds a language, you can check if that lanuage is selected, and if so, load the translations for that language.
+
+#### `list_plugins`
+This hook is called when all plugins are listed.<br></br>
+List your plugin's name and other quick info here.
+
+#### `load`
+This hook is called when plugins are loaded.<br></br>
+Here, you can run whatever you want to run when your plugin is loaded. Add 1 to the `$plugins worldtool` score here.
 
 #### `measure/area_done`
 This hook is called when an area's size has been calculated.
@@ -110,13 +133,13 @@ If you have your own menu that starts the block picking, you can return to it fr
 This hook is called when the tags for returning from picking a block and putting it into data are removed.<br></br>
 If you add a tag to return from this function, you can remove it here.
 
-#### `process/greenery/check_base`
-This hook is called when the Greenery process checks if the base block is valid.<br></br>
-If you have a custom greenery plant source with a non-standard base block requirement, you can check for it here.
+#### `plugin_blocks_per_tick_list`
+This hook is called when the blocks per tick values for plugin processes are listed.<br></br>
+If you have a custom process with blocks per tick data, list it here.
 
-#### `process/greenery/plant_tables`
-This hook is called when the Greenery process checks what plant table to use.<br></br>
-If you have a custom greenery plant source, you can call its plant table function here.
+#### `plugin_settings`
+This hook is called when settings added by plugins are listed.<br></br>
+If you have a custom setting, list it here.
 
 #### `process/adjust_progress_bar_value`
 This hook is called when the progress bar's value is updated.<br></br>
@@ -136,6 +159,14 @@ This hook is called when a process is ended.
 #### `process/final_code`
 This hook is called before a process is either ended or continued.
 
+#### `process/greenery/check_base`
+This hook is called when the Greenery process checks if the base block is valid.<br></br>
+If you have a custom greenery plant source with a non-standard base block requirement, you can check for it here.
+
+#### `process/greenery/plant_tables`
+This hook is called when the Greenery process checks what plant table to use.<br></br>
+If you have a custom greenery plant source, you can call its plant table function here.
+
 #### `process_message/display`
 This hook is called when a process message is displayed before it either ends or continues.<br></br>
 Here, you can display a custom message for your own process. If you add the `wt.message.custom_display` tag, you can disable all standard WorldTool messages that use plural for anything not 1, and singular for 1, in case you're working on translations for a language that does not follow those rules.
@@ -148,13 +179,13 @@ Here, you can remove the `wt.brush_area.flat` and `wt.brush_area.normal` tags an
 This hook is called when the tags that decide the type of area to select are removed.<br></br>
 Here, you can call you own area selection and remove any custom area selection tags you have.
 
-#### `process_start/brush/normal_start/processes`
-This hook is called when the processes for the normal brush start system are set up.<br></br>
-Here, you can set up your own custom process, if it's selected.
-
 #### `process_start/brush/check`
 This hook is called when the brush checks what start system to use.<br></br>
 If you have a custom start system, you can call that here.
+
+#### `process_start/brush/normal_start/processes`
+This hook is called when the processes for the normal brush start system are set up.<br></br>
+Here, you can set up your own custom process, if it's selected.
 
 #### `process_start/brush/start`
 This hook is called when the way the brush should be started is decided.<br></br>
@@ -185,10 +216,6 @@ If you have any custom values that should be applied to the progress bar, you ca
 #### `process_start/common/start`
 This hook is called when the process is about to be started through the common starting system.
 
-#### `process_start/shapes/processes`
-This hook is called when the processes for the Shape Generation Tool are set up.<br></br>
-Here, you can call the appropriate function if you have to a custom shape to set up.
-
 #### `process_start/from_queue`
 This hook is called when a process start is continued after being queued.<br></br>
 If you have a custom starting system, you can continue it from here.
@@ -201,9 +228,17 @@ This code is executed as the process entity.
 This hook is called when the secondary process entity is being set up.<br></br>
 This code is executed as the secondary process entity.
 
+#### `process_start/shapes/processes`
+This hook is called when the processes for the Shape Generation Tool are set up.<br></br>
+Here, you can call the appropriate function if you have to a custom shape to set up.
+
 #### `process_start/variables`
 This hook is called when variables to use in the process are set.<br></br>
 If you have your own data or scores to set up, you can do so here.
+
+#### `remove_player_tags`
+This hook is called when all player tags are removed from `@s`.<br></br>
+If you have any custom tags added to players that are not removed in other places, remove them here.
 
 #### `save_load/area_loaded`
 This hook is called when the Load Area process has been completed.<br></br>
@@ -229,33 +264,9 @@ If you have a custom purpose tag for the Load Area process and/or area data to l
 This hook is called when Save Area process is set up.<br></br>
 If you have a custom purpose tag for the Save Area process, you can add it to the process data here.
 
-#### `ui/reopen_menu/after_error`
-This hook is called when WorldTool attempts to reopen a menu (after an error).<br></br>
-If you have a custom menu and want it to support reopening after errors, add a check for the menu's tag here.
-
-#### `ui/reopen_menu/after_process`
-This hook is called when WorldTool attempts to reopen a menu (after a process has been completed).<br></br>
-If you have a custom menu and want it to support reopening after processes being completed, add a check for the menu's tag here.
-
-#### `ui/reopen_menu/after_reload`
-This hook is called when WorldTool attempts to reopen a menu (after WorldTool has been reloaded).<br></br>
-If you have a custom menu and want it to reopen after the data pack has been reloaded, add a check for the menu's tag here.
-
-#### `ui/reopen_menu/after_starting`
-This hook is called when WorldTool attempts to reopen a menu (after starting a process).<br></br>
-If you have a custom menu and want it to support reopening after processes starts, add a check for the menu's tag here.
-
-#### `ui/reopen_menu/from_submenu`
-This hook is called when WorldTool attempts to reopen a menu (from inside a submenu of that menu).<br></br>
-If you have a custom menu that uses a non-menu-specific submenu and want it to support reopening the parent menu, add a check for the parent menu's tag here.
-
-#### `ui/undo_redo/undo`
-This hook is called after the last action has been undone.<br></br>
-If you have a custom menu that uses the undo/redo buttons, you can return to that menu from here.
-
-#### `ui/undo_redo/redo`
-This hook is called after the last undone action has been redone.<br></br>
-If you have a custom menu that uses the undo/redo buttons, you can return to that menu from here.
+#### `setup_blocks_per_tick`
+This hook is called when blocks per tick data is set up.<br></br>
+If you have a custom process, you can add blocks per tick data for it here.
 
 #### `ui/back_using_tags`
 This hook is called when dynamically going to back to the menu before the current one.<br></br>
@@ -279,6 +290,26 @@ If you have a tag to remove while moving between menus, you can do so here.
 This hook is called when tags used in menus that can be returned from are removed.<br></br>
 If you have a tag to remove that was used in a returnable-from menu, you can do so here.
 
+#### `ui/reopen_menu/after_error`
+This hook is called when WorldTool attempts to reopen a menu (after an error).<br></br>
+If you have a custom menu and want it to support reopening after errors, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/after_process`
+This hook is called when WorldTool attempts to reopen a menu (after a process has been completed).<br></br>
+If you have a custom menu and want it to support reopening after processes being completed, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/after_reload`
+This hook is called when WorldTool attempts to reopen a menu (after WorldTool has been reloaded).<br></br>
+If you have a custom menu and want it to reopen after the data pack has been reloaded, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/after_starting`
+This hook is called when WorldTool attempts to reopen a menu (after starting a process).<br></br>
+If you have a custom menu and want it to support reopening after processes starts, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/from_submenu`
+This hook is called when WorldTool attempts to reopen a menu (from inside a submenu of that menu).<br></br>
+If you have a custom menu that uses a non-menu-specific submenu and want it to support reopening the parent menu, add a check for the parent menu's tag here.
+
 #### `ui/return.back`
 This hook is called when the user backs out from a returnable-from menu.<br></br>
 If you have a custom menu that opened a returnable-from menu, you can go back to that menu from here.
@@ -286,6 +317,18 @@ If you have a custom menu that opened a returnable-from menu, you can go back to
 #### `ui/return`
 This hook is called when succesfully returning from a returnable-from menu.<br></br>
 If you have a custom menu that opened a returnable-from menu, you can run the commands for success here.
+
+#### `ui/undo_redo/undo`
+This hook is called after the last action has been undone.<br></br>
+If you have a custom menu that uses the undo/redo buttons, you can return to that menu from here.
+
+#### `ui/undo_redo/redo`
+This hook is called after the last undone action has been redone.<br></br>
+If you have a custom menu that uses the undo/redo buttons, you can return to that menu from here.
+
+#### `ui_brush/brush_list`
+This hook is called when all brushes are listed.<br></br>
+Here, you can display any custom brushes as buttons.
 
 #### `ui_brush/menu/add_tags`
 This hook is called when the tags for which UI elements to display in the main Brush Tool menu are added.<br></br>
@@ -303,21 +346,9 @@ If you have a custom brush or custom brush setting, you can display the appropri
 This hook is called when the tags for which UI elements to display in the main Brush Tool menu are removed.<br></br>
 If you have any custom tags you've added, you can remove them here. You can also display custom buttons for the bottom of the menu here.
 
-#### `ui_brush/brush_list`
-This hook is called when all brushes are listed.<br></br>
-Here, you can display any custom brushes as buttons.
-
 #### `ui_brush/remove_ui_tags`
-This hook is called when all tags related to the brush are removed.<br></br>
+This hook is called when all tags related to the Brush Tool are removed.<br></br>
 Here, you can remove any custom brush tags you've added and not already removed.
-
-#### `ui_general/two_block_query/display_1`
-This hook is called when the secondary block selection of the two block query menu is displayed.<br></br>
-If you have a custom message for this menu, you can display it here.
-
-#### `ui_general/two_block_query/display_2`
-This hook is called when the primary block selection of the two block query menu is displayed.<br></br>
-If you have a custom message for this menu, you can display it here.
 
 #### `ui_general/plugin_page`
 This hook is called when the plugin page of the General Tool menu is displayed.<br></br>
@@ -339,6 +370,18 @@ Called when the Keep Menu Options setting is switched off. If you have a custom 
 This hook is called when the <MCFont color="#0aad02">[Keep]</MCFont> option is toggled.<br></br>
 If you have a menu that displays this option, you can return to that menu from here.
 
+#### `ui_general/two_block_query/display_1`
+This hook is called when the secondary block selection of the two block query menu is displayed.<br></br>
+If you have a custom message for this menu, you can display it here.
+
+#### `ui_general/two_block_query/display_2`
+This hook is called when the primary block selection of the two block query menu is displayed.<br></br>
+If you have a custom message for this menu, you can display it here.
+
+#### `ui_shapes/add_preview_tags`
+This hook is called when tags are added to the entity responsible for the shape preview.<br></br>
+If you have a custom shape, you can add the appropriate tags here. The Shape Generation Tool data is available through the storage `worldtool:storage`'s value `Temp.ShapeTool`.
+
 #### `ui_shapes/menu/add_tags`
 This hook is called when the tags for which UI elements to display in the main Shape Generation Tool menu.<br></br>
 If you have a custom shape, you can add or remove the appropriate tags for it here.
@@ -354,3 +397,43 @@ If you have a custom shape, you can display it here when it's selected.
 #### `ui_shapes/menu/remove_tags`
 This hook is called when the tags for which UI elements to display in the main Shape Generation Tool menu are removed.<br></br>
 If you have any custom tags you've added, you can remove them here.
+
+#### `ui_shapes/remove_preview_tags`
+This hook is called before new tags are added to the entity responsible for the shape preview.<br></br>
+If you have added any tags, you can remove them here.
+
+#### `ui_shapes/remove_ui_tags`
+This hook is called when all tags related to the Shape Generation Tool are removed.<br></br>
+Here, you can remove any custom shape tags you've added and not already removed.
+
+#### `ui_shapes/set_preview_axes`
+This hook is called when the available axes are decided for the shape previe.
+
+#### `ui_shapes/shape_lists`
+This hook is called when all available shapes are listed.<br></br>
+If you have a custom shape, you can list it here as a button.
+
+#### `use_tool/add_tags`
+This hook is called when tags for the right-clicked tool are added.<br></br>
+The `wt.raycast_normal` and `wt.raycast_before` tags can be removed/added to decide which type of raycast to use.
+
+#### `use_tool/ray_hit/all`
+This hook is called when the raycasting of right-clicking a tool hits a block.
+
+#### `use_tool/ray_hit/general`
+This hook is called when the raycasting of right-clicking a General Tool hits a block.
+
+#### `use_tool/remove_tags`
+This hook is called when tags for the right-clicked tool are removed.<br></br>
+If you have any custom tags added in the corresponding `add_tags` hook, you can remove them here.
+
+#### `use_tool/update_block/add_tags`
+This hook is called when tags for which blocks to update from data are added.<br></br>
+Here, you can add or remove the `wt.block.primary` and `wt.block.secondary` tags. The blocks to place are availalable through the storage `worldtool:storage`'s value `Temp.Blocks`.
+
+#### `use_tool/update_block/finish`
+This hook is called when the loading of blocks from data is finished.
+
+#### `use_tool/update_block/remove_tags`
+This hook is called when tags for which blocks to update from data are removed.<br></br>
+If you have any custom tags added in the corresponding `add_tags` hook, you can remove them here.
