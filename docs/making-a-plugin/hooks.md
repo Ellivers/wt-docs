@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import MCFont from '@site/src/components/minecraft-font'
+
 # Hooks
 
 A hook is a function tag under the path `worldtool:hooks/`. WorldTool has a lot of different hooks that allow you to enter your own code to add to or change various things.
@@ -158,9 +160,197 @@ If you have a custom start system, you can call that here.
 This hook is called when the way the brush should be started is decided.<br></br>
 If you have a custom brush, you check if it's selected here, and if so, call the appropriate function.
 
+#### `process_start/common/continue1`
+This hook is called when the common starting system is continued from the first continue point.
+
+#### `process_start/common/continue2`
+This hook is called when the common starting system is continued from the second continue point.
+
+#### `process_start/common/load`
+This hook is called when the common starting system is loaded, after the validity of the selected positions is checked.<br></br>
+You might want to check if the `#success worldtool` score matches 1 before running any commands here, to ensure that the position validity check suceeded.
+
+#### `process_start/common/setup_process.entity`
+This hook is called when entities input data to the process being set up, in the common starting system.<br></br>
+If you have an entity to get data from, you can do that here, with the entity being `@s`.
+
+#### `process_start/common/setup_process`
+This hook is called when processes are set up with the common starting system.<br></br>
+If you have a custom process to set up, you can the appropriate function here if the correct tag is active.
+
+#### `process_start/common/setup_progress_bar`
+This hook is called when the progress bar is set up through the common starting system.<br></br>
+If you have any custom values that should be applied to the progress bar, you can do so here.
+
+#### `process_start/common/start`
+This hook is called when the process is about to be started through the common starting system.
+
 #### `process_start/shapes/processes`
 This hook is called when the processes for the Shape Generation Tool are set up.<br></br>
 Here, you can call the appropriate function if you have to a custom shape to set up.
 
-#### `process_start/common_load`
-This hook is called when the common starting system is loaded.
+#### `process_start/from_queue`
+This hook is called when a process start is continued after being queued.<br></br>
+If you have a custom starting system, you can continue it from here.
+
+#### `process_start/process_entity_setup`
+This hook is called when the process entity is being set up.<br></br>
+This code is executed as the process entity.
+
+#### `process_start/secondary_process_entity_setup`
+This hook is called when the secondary process entity is being set up.<br></br>
+This code is executed as the secondary process entity.
+
+#### `process_start/variables`
+This hook is called when variables to use in the process are set.<br></br>
+If you have your own data or scores to set up, you can do so here.
+
+#### `save_load/area_loaded`
+This hook is called when the Load Area process has been completed.<br></br>
+If you have a custom purpose tag for a Load Area process, you can run your desired end-of-process commands here. If you loaded your own backup slots and are not planning on using them anymore, please restock them.
+
+#### `save_load/area_saved`
+This hook is called when the Save Area process has been completed.<br></br>
+If you have a custom purpose tag for a Save Area process, you can run your desired end-of-process commands here.
+
+#### `save_load/remove_load_tags`
+This hook is called when purpose tags for the Load Area process are removed.<br></br>
+If you have a custom purpose tag for the Load Area process, you can remove it here.
+
+#### `save_load/remove_save_tags`
+This hook is called when purpose tags for the Save Area process are removed.<br></br>
+If you have a custom purpose tag for the Save Area process, you can remove it here.
+
+#### `save_load/setup_load_process`
+This hook is called when Load Area process is set up.<br></br>
+If you have a custom purpose tag for the Load Area process and/or area data to load, you can add it to the process data here.
+
+#### `save_load/setup_save_process`
+This hook is called when Save Area process is set up.<br></br>
+If you have a custom purpose tag for the Save Area process, you can add it to the process data here.
+
+#### `ui/reopen_menu/after_error`
+This hook is called when WorldTool attempts to reopen a menu (after an error).<br></br>
+If you have a custom menu and want it to support reopening after errors, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/after_process`
+This hook is called when WorldTool attempts to reopen a menu (after a process has been completed).<br></br>
+If you have a custom menu and want it to support reopening after processes being completed, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/after_reload`
+This hook is called when WorldTool attempts to reopen a menu (after WorldTool has been reloaded).<br></br>
+If you have a custom menu and want it to reopen after the data pack has been reloaded, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/after_starting`
+This hook is called when WorldTool attempts to reopen a menu (after starting a process).<br></br>
+If you have a custom menu and want it to support reopening after processes starts, add a check for the menu's tag here.
+
+#### `ui/reopen_menu/from_submenu`
+This hook is called when WorldTool attempts to reopen a menu (from inside a submenu of that menu).<br></br>
+If you have a custom menu that uses a non-menu-specific submenu and want it to support reopening the parent menu, add a check for the parent menu's tag here.
+
+#### `ui/undo_redo/undo`
+This hook is called after the last action has been undone.<br></br>
+If you have a custom menu that uses the undo/redo buttons, you can return to that menu from here.
+
+#### `ui/undo_redo/redo`
+This hook is called after the last undone action has been redone.<br></br>
+If you have a custom menu that uses the undo/redo buttons, you can return to that menu from here.
+
+#### `ui/back_using_tags`
+This hook is called when dynamically going to back to the menu before the current one.<br></br>
+If you have a custom menu that you want to go back to another one, you can do that from here.
+
+#### `ui/block_selected`
+This hook is called when a new block is selected with either the Brush Tool or the Shape Generation Tool.
+
+#### `ui/close`
+This hook is called when a menu is closed.<br></br>
+Here, you can remove anyting you want gone when closing a menu.
+
+#### `ui/queue_leave`
+This hook is called when leaving the queue.
+
+#### `ui/remove_menu_tags`
+This hook is called when UI menu tags are removed.<br></br>
+If you have a tag to remove while moving between menus, you can do so here.
+
+#### `ui/remove_return_tags`
+This hook is called when tags used in menus that can be returned from are removed.<br></br>
+If you have a tag to remove that was used in a returnable-from menu, you can do so here.
+
+#### `ui/return.back`
+This hook is called when the user backs out from a returnable-from menu.<br></br>
+If you have a custom menu that opened a returnable-from menu, you can go back to that menu from here.
+
+#### `ui/return`
+This hook is called when succesfully returning from a returnable-from menu.<br></br>
+If you have a custom menu that opened a returnable-from menu, you can run the commands for success here.
+
+#### `ui_brush/menu/add_tags`
+This hook is called when the tags for which UI elements to display in the main Brush Tool menu are added.<br></br>
+If you have a custom brush, you can add or remove the appropriate tags for it here.
+
+#### `ui_brush/menu/display_brush`
+This hook is called when the selected brush is displayed.<br></br>
+If you have a custom brush, you can display it here when it's selected.
+
+#### `ui_brush/menu/display_settings`
+This hook is called when the brush settings are displayed.<br></br>
+If you have a custom brush or custom brush setting, you can display the appropriate settings here.
+
+#### `ui_brush/menu/remove_tags`
+This hook is called when the tags for which UI elements to display in the main Brush Tool menu are removed.<br></br>
+If you have any custom tags you've added, you can remove them here. You can also display custom buttons for the bottom of the menu here.
+
+#### `ui_brush/brush_list`
+This hook is called when all brushes are listed.<br></br>
+Here, you can display any custom brushes as buttons.
+
+#### `ui_brush/remove_ui_tags`
+This hook is called when all tags related to the brush are removed.<br></br>
+Here, you can remove any custom brush tags you've added and not already removed.
+
+#### `ui_general/two_block_query/display_1`
+This hook is called when the secondary block selection of the two block query menu is displayed.<br></br>
+If you have a custom message for this menu, you can display it here.
+
+#### `ui_general/two_block_query/display_2`
+This hook is called when the primary block selection of the two block query menu is displayed.<br></br>
+If you have a custom message for this menu, you can display it here.
+
+#### `ui_general/plugin_page`
+This hook is called when the plugin page of the General Tool menu is displayed.<br></br>
+If you have a custom General Tool operation, you can display a button for it here.
+
+#### `ui_general/remove_submenu_tags.mandatory`
+This hook is called when tags used by submenus of the General Tool main menu that have to be removed are removed.<br></br>
+If you have a custom menu with a tag that has to be removed when exiting the menu, remove it here.
+
+#### `ui_general/remove_submenu_tags.other`
+This hook is called when all tags used by submenus of the General Tool main menu are removed.<br></br>
+Called only if the Keep Menu Options setting is off. Remove tags of your custom menu here.
+
+#### `ui_general/remove_visited_tags`
+This hook is called when tags storing which General Tool menus have been visited are removed.<br></br>
+Called when the Keep Menu Options setting is switched off. If you have a custom menu that uses a tag to remember if users have visited that menu, remove the tag here.
+
+#### `ui_general/toggle_keep`
+This hook is called when the <MCFont color="#0aad02">[Keep]</MCFont> option is toggled.<br></br>
+If you have a menu that displays this option, you can return to that menu from here.
+
+#### `ui_shapes/menu/add_tags`
+This hook is called when the tags for which UI elements to display in the main Shape Generation Tool menu.<br></br>
+If you have a custom shape, you can add or remove the appropriate tags for it here.
+
+#### `ui_shapes/menu/display_settings`
+This hook is called when the shape settings are displayed.<br></br>
+If you have a custom shape or custom shape setting, you can display the appropriate settings here.
+
+#### `ui_shapes/menu/display_shape`
+This hook is called when the selected shape is displayed.<br></br>
+If you have a custom shape, you can display it here when it's selected.
+
+#### `ui_shapes/menu/remove_tags`
+This hook is called when the tags for which UI elements to display in the main Shape Generation Tool menu are removed.<br></br>
+If you have any custom tags you've added, you can remove them here.
