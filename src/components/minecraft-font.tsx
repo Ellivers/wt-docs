@@ -24,7 +24,6 @@ const colors: {[key: string]: string} = {
 
 const MCFont = (props: props) => {
     const color = colors[props.color] || props.color || 'white';
-    console.log(tinycolor(color).darken(0.75).toString());
 
     return (
         <code className={styles.mcfont} style={{color: color, textShadow: `1.625px 1.625px 0 ${tinycolor(color).darken(55).toString()}`}}>

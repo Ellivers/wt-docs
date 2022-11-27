@@ -38,4 +38,4 @@ You can see what actions you can perform with each tool's item by hovering over 
 :::
 
 ## Documentation Issues
-If you feel something should be added to this documentation or if you find something you feel is incorrect, please open an issue [here](https://github.com/Ellivers/worldtool-docs/issues/new).
+If you feel something should be added to this documentation or if you find something you feel is incorrect, please open an issue [here](https://github.com/Ellivers/worldtool-docs/issues).
