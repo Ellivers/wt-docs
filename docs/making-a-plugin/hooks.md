@@ -8,6 +8,8 @@ import MCFont from '@site/src/components/minecraft-font'
 
 A hook is a function tag under the path `worldtool:hooks/`. WorldTool has a lot of different hooks that allow you to enter your own code to add to or change various things.
 
+If you have a request for a hook to add, please open an [issue](https://github.com/Ellivers/WorldTool/issues) on the GitHub page.
+
 ## List of Hooks
 A list of all hooks and their potential uses, in alphabetical order. <span style={{ fontSize: '.3em' }}>Why do I do this to myself?</span><br></br>
 Search for the hook paths within the WorldTool data pack to find more context on how to use them.

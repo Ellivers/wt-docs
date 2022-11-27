@@ -11,7 +11,7 @@
 	var number = /(?:\b|-)\d+\b/;
 	var storageorstring = /( ([a-z_]+:[a-z_]+)|( ["'].*["']))/;
 	var nbt = /([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s?(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\})/;
-	var func = /#?[a-z_\-]+(:[a-z_\-/]+)?/;
+	var func = /#?[a-z_\-\.]+(:[a-z_\-/\.]+)?/;
 	var selector = /@[apres](\[.*\])?/;
 
 	Prism.languages.mcfunction = {
@@ -20,7 +20,14 @@
 		],
 		'command': [
 			{
-				'pattern': /^data ((modify ((storage [a-z_]+:[a-z_]+ (([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s?(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\})) (set|append) ((value "?.*"?)|(from storage [a-z_]+:[a-z_]+ (([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s?(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\}))))))))/m,
+				'pattern': /^execute( (if|unless) blocks [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ (all|masked))*( run)?/m,
+				'inside': {
+					'function': /\bexecute\b/i,
+					'variable': / [~\.\d]+/
+				}
+			},
+			{
+				'pattern': /^\s?data ((modify ((storage [a-z_]+:[a-z_]+ (([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s?(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\})) (set|append) ((value "?.*"?)|(from storage [a-z_]+:[a-z_]+ (([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s?(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\}))))))))/m,
 				'inside': {
 					'function': /\bdata\b/i,
 					'string': storageorstring,
@@ -31,7 +38,7 @@
 				}
 			},
 			{
-				'pattern': /^function #?[a-z_\-]+(:[a-z_\-/]+)?/m,
+				'pattern': /^\s?function #?[a-z_\-\.]+(:[a-z_\-/\.]+)?/m,
 				'inside': {
 					'function': /\bfunction\b/i,
 					'string': func,
@@ -41,7 +48,7 @@
 				}
 			},
 			{
-				'pattern': /^tellraw @[apres](\[.*\])? [\[\{"].*/m,
+				'pattern': /^\s?tellraw @[apres](\[.*\])? [\[\{"].*/m,
 				'inside': {
 					'function': /\btellraw\b/i,
 					'string': selector,
@@ -51,9 +58,9 @@
 				}
 			},
 			{
-				'pattern': /^tag @[apres](\[.*\])? (add|remove) [a-zA-Z_\.]+/m,
+				'pattern': /^\s?tag @[apres](\[.*\])? (add|remove) [a-zA-Z_\.]+/m,
 				'inside': {
-					'function': /\btag\b/,
+					'function': /\btag\b/i,
 					'string': selector,
 					'variable': /[a-zA-Z_\.]+$/
 				}

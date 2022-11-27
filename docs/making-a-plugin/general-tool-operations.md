@@ -7,7 +7,6 @@ sidebar_position: 5
 To add a button to either open your operation menu or start your operation, use the [`ui_general/plugin_page` hook](hooks#ui_generalplugin_page).
 
 ## Menu
-
 A General Tool operation menu can look something like this:
 
 ```mcfunction
@@ -58,3 +57,6 @@ function worldtool:technical/save_load/backup/load
 ```
 
 If you want your menu to re-open after the process has started, use the [`ui/reopen_menu/after_starting` hook](hooks#uireopen_menuafter_startingq).
+
+## Run Process
+Main page: [Processes](processes).

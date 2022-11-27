@@ -59,7 +59,7 @@ const config = {
           //   label: 'Documentation',
           // },
           {
-            href: 'https://ellivers.netlify.app/discord',
+            href: 'https://discord.gg/jn8d4zb',
             label: 'Discord',
             position: 'right',
           },
