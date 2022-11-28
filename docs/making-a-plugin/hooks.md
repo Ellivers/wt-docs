@@ -10,6 +10,19 @@ A hook is a function tag under the path `worldtool:hooks/`. WorldTool has a lot 
 
 If you have a request for a hook to add, please open an [issue](https://github.com/Ellivers/WorldTool/issues) on the GitHub page.
 
+## Usage
+To use a hook, first create a function file. Then, from the root of your data pack, make sure you have the folder `data/worldtool/tags/functions/hooks/` created. Inside that folder, then create a `.json` file with the path/file name of the hook name, and with the following content:
+
+```json
+{
+    "values": [
+        "myplugin:example_function"
+    ]
+}
+```
+
+With `myplugin:example_function` being replaced with the resource path to the function you created.
+
 ## List of Hooks
 A list of all hooks and their potential uses, in alphabetical order. <span style={{ fontSize: '.3em' }}>Why do I do this to myself?</span><br></br>
 Search for the hook paths within the WorldTool data pack to find more context on how to use them.

@@ -43,11 +43,14 @@ Use the [`process_start/common/setup_process` hook](hooks#process_startcommonset
 ```mcfunction
 # Example of a process setup function
 
-data modify storage worldtool:storage Processes append value {ProcessName:'{"nbt":"Translation.\"myplugin.process.example\"","storage":"worldtool:storage"}',ID:"myplugin:example",Tags:["myplugin.process.example"]}
-# If you've set up blocks per tick data for this process
+# Tell the function that sets up all the processes that everything is alright
+scoreboard players set #success worldtool 1
+
+data modify storage worldtool:storage Processes prepend value {ProcessName:'{"nbt":"Translation.\"myplugin.process.example\"","storage":"worldtool:storage"}',ID:"myplugin:example",Tags:["myplugin.process.example"]}
+# If you have set up blocks per tick data for this process
 data modify storage worldtool:storage Processes[0].BlocksPerTick set from storage worldtool:storage BlocksPerTick.Processes[{ID:"myplugin:example"}]
 
-function worldtool:process_start/common/set_process_values
+function worldtool:process_start/general/set_process_values
 
 # Remove the setup tag
 tag @s remove myplugin.setup.example

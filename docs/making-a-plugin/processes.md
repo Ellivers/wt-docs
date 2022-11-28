@@ -4,9 +4,14 @@ sidebar_position: 4
 
 # Processes
 
-To follow these steps, you'll have to first have set up a process as a [General Tool operation](general-tool-operations), [brush](brushes) or [shape](shapes) (or perhaps through a custom start system?).
+[About processes and process data](../technical/processes).
+
+## Setting up Blocks per Tick
+
 
 ## Setting Up Files
+
+To follow these steps, you'll have to first have set up a process as a [General Tool operation](general-tool-operations), [brush](brushes) or [shape](shapes) (or perhaps through a custom start system?).
 
 How to set up a basic process that iterates over an area:
 

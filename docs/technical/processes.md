@@ -20,7 +20,7 @@ A process is started by inputting a compound with some data.
 `BlocksPerTick` (Integer, optional (if not set, will default to maximum integer)) - The [blocks per tick](../configuration#blocks-per-tick) to use for this process.<br></br>
 `Volume` (Integer, used by shape generation processes) - The rough size of the finished shape.<br></br>
 **Automatically set:**<br></br>
-`StartType` (String, default options are `worldtool:common`, `worldtool:brush`, or `worldtool:shape`) - What system to use for starting the process.<br></br>
+`StartType` (String, default options are `worldtool:common`, `worldtool:general`, `worldtool:brush`, or `worldtool:shape`) - What system to use for starting the process.<br></br>
 `Positions` (Compound, not used by single-position processes) - Some positions to use.<br></br>
 &emsp;&emsp;`1` (List of 3 doubles) - The first corner.<br></br>
 &emsp;&emsp;`2` (List of 3 doubles) - The second corner.<br></br>

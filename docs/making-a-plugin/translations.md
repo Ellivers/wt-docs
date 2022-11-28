@@ -4,10 +4,6 @@ sidebar_position: 3
 
 # Translations
 
-:::note
-If you have a language that you would like to add to WorldTool, please contact me on [Discord](https://discord.gg/jn8d4zb) about it, or open a [pull request](https://github.com/Ellivers/WorldTool/pulls).
-:::
-
 WorldTool's translations are stored in function files, which set storage values in the `worldtool:storage` storage:
 
 `Language` - ID string of the current language. Default is `worldtool:en_us`.
@@ -20,9 +16,13 @@ If the translation is stored as a JSON string, you can add `"interpret":true` to
 ## Adding Translations to Existing Languages
 
 The [`language/en_us` hook](hooks#languageen_us) can be used to add translations to the existing language: `English (US)`.<br></br>
-For the sake of compatibility and future-proofing, please either add a prefix to custom translation keys, or use your storage for them.
+For the sake of compatibility and future-proofing, please either add a prefix to custom translation keys, or use your own storage for them.
 
 ## Adding a Language
+
+:::note
+If you have a language that you would like to add to WorldTool, please contact me on [Discord](https://discord.gg/jn8d4zb) about it, or open a [pull request](https://github.com/Ellivers/WorldTool/pulls).
+:::
 
 Make a function file that sets the `Language` value to an appropriate ID, copy-paste all translations from the default `worldtool:language/en_us` function and translate them.
 

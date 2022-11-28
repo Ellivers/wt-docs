@@ -6,7 +6,7 @@ import MCFont from '@site/src/components/minecraft-font'
 
 # Shatter
 
-The Shatter menu can be found with the <MCFont color="red">[Shatter...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation breaks blocks, with particles and sound.
+The Shatter menu can be found with the <MCFont color="red">[Shatter...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation breaks blocks, causing particles and sound.
 #
 ![The Shatter menu](img/shatter_menu.png)
 
@@ -17,3 +17,8 @@ The <MCFont color="light_purple">[Drop Items]</MCFont> option toggles whether to
 
 ## Replace
 The <MCFont color="gold">[Replace...]</MCFont> button opens a menu where you can choose a certain block to replace (<MCFont color="green">[Normal]</MCFont>), or a certain block to *not* replace (<MCFont color="gold">[Exclude]</MCFont>). Selecting a block in this menu starts the Shatter operation.
+
+­<br></br>
+:::info keep compatibility
+Seeing as this operation removes existing blocks, the <MCFont color="#0aad02">[Keep]</MCFont> option, which normally makes the operation only replace blocks such as air or water, has no effect on it.
+:::
