@@ -424,7 +424,7 @@ Here, you can remove any custom shape tags you've added and not already removed.
 #### `ui_shapes/set_preview_axes`
 This hook is called when the available axes are decided for the shape previe.
 
-#### `ui_shapes/shape_lists`
+#### `ui_shapes/shape_list`
 This hook is called when all available shapes are listed.<br></br>
 If you have a custom shape, you can list it here as a button.
 

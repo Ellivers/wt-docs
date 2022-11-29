@@ -52,7 +52,7 @@
 				'inside': {
 					'function': /\btellraw\b/i,
 					'string': selector,
-					'variable': /.*/,
+					'variable': /[^ ]+$/,
 					// 'number': number,
 					// 'punctuation': /[()',]/
 				}

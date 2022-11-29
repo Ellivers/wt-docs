@@ -36,7 +36,7 @@ Step-by-step instructions on how to make a brush for the Brush Tool:
 
     * The `Brush` ID.
     * The `Requires` list, which specifies what the brush needs to use. The available requirements are `block` and `area`.
-    * The first [translation](translations) in the `"lore"` list.
+    * The first [translation](translations#adding-translations-to-existing-languages) in the `"lore"` list.
 
 2. Make a new function for running when your brush is selected.
     
@@ -50,7 +50,7 @@ Step-by-step instructions on how to make a brush for the Brush Tool:
     function worldtool:ui_brush/check_tool
 
     # Call your item modifier
-    item modify entity @s weapon.mainhand worldtool:brush_tool/brushes/paint
+    item modify entity @s weapon.mainhand myplugin:example_brush
     function worldtool:ui/sound.change_item
 
     # Options you want to change when your brush is selected
