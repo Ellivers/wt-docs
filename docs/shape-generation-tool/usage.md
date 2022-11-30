@@ -45,7 +45,7 @@ The <MCFont color="yellow">[Hollow]</MCFont> option toggles whether the inside o
 ## Adjust Position
 
 The Adjust Position menu allows you to nudge the set position.<br></br>
-![The Adjust Position menu](../img/placeholder.png)
+![The Adjust Position menu](img/adjust_position_menu.png)
 
 At the top of the menu, the current position is displayed.
 

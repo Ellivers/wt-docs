@@ -33,7 +33,7 @@ The <MCFont color="#5a20e3">[Reset All]</MCFont> button at the bottom of the men
 ### Language
 The <MCFont color="aqua">[Language...]</MCFont> button at the top opens a menu that lets you change the language as well as a <MCFont color="yellow">[Reload]</MCFont> option.
 #
-![The Language menu](img/placeholder.png)
+![The Language menu](img/language_menu.png)
 
 So far, there is only one language available. You can add a new language yourself by using a [plugin](making-a-plugin/start), but please let me know if you would like to help translate WorldTool, so I can add it to the base data pack.
 #
@@ -42,7 +42,7 @@ The <MCFont color="yellow">[Reload]</MCFont> option can be used to reload all tr
 ### Blocks per Tick
 The <MCFont color="aqua">[Blocks per Tick...]</MCFont> button at the top opens this menu:
 #
-![Page 1 of the Blocks per Tick menu](img/placeholder.png)
+![Page 1 of the Blocks per Tick menu](img/blocks_per_tick_menu_page_1.png) ![Page 2 of the Blocks per Tick menu](img/blocks_per_tick_menu_page_2.png)
 
 In this menu, you can specify a "blocks per tick" value for each [process](technical/processes), which is simply how many blocks the process goes through in a single tick (1 tick = 1/20 seconds). Lowering this value can help with performance.
 #
