@@ -7,10 +7,11 @@
 			'punctuation': /:/
 		}
 	};
-	var string = /"(?:[\\"]"|[^"])*"(?!")/;
+	var string = /"(?:[\\"]"|[^"])*"(?!["])/;
 	var number = /(?:\b|-)\d+\b/;
-	var storageorstring = /( ([a-z_]+:[a-z_]+)|( ["'].*["']))/;
-	var nbt = /([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s*(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\})/;
+	var storage = /[a-z_]+:[a-z_]+/;
+	var nbtcontent = new RegExp(`\\{(\\s*"?[a-zA-Z]+"?:\\s*(${string.source}|\\d+\\.?\\d*[dfs]?|(.*)),?)*\\}`);
+	var nbt = new RegExp(`(([A-Za-z_]+|${string.source})(\\[(\\d*|${nbtcontent.source})\\])?\\.?)+(${nbtcontent.source})?|${nbtcontent.source}`);
 	var resourcePath = /#?[a-z_\-\.0-9]+(:[a-z_\-/\.0-9]+)?/;
 	var selector = /@[apres](\[.*\])?/;
 
@@ -20,18 +21,19 @@
 		],
 		'command': [
 			{
-				'pattern': /^execute( (if|unless) blocks [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ [~\.\d]+ (all|masked))*( run)?/m,
+				'pattern': new RegExp(`^execute( (if|unless) (blocks${' [~\\.\\d]+'.repeat(9)} (all|masked)|data storage ${storage.source} ${nbt.source}))*( run)?`, 'm'),
 				'inside': {
-					'function': /\bexecute\b/i,
-					'variable': / [~\.\d]+/
+					'function': /\bexecute/,
+					'variable': new RegExp(`( [~\\.\\d]+)|((?<=${storage.source} )(${nbt.source}))`),
+					'string': new RegExp(' ' + storage.source)
 				}
 			},
 			{
-				'pattern': /^\s*data ((modify ((storage [a-z_]+:[a-z_]+ (([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s*(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\})) (set|append|prepend) ((value "?.*"?)|(from storage [a-z_]+:[a-z_]+ (([A-Z]("?[A-Za-z_]"?(\[((\d+)|(\{[A-Za-z_]+:\s*(["'][a-z:]*["'])\}))\])?\.?)+)|(\{.*\}))))))))/m,
+				'pattern': new RegExp(`^\\s*data ((modify ((storage ${storage.source} (${nbt.source}) (set|append|prepend) ((value (${string.source}|.*))|(from storage ${storage.source} (${nbt.source})))))))`, 'm'),
 				'inside': {
-					'function': /\bdata\b/i,
-					'string': storageorstring,
-					'variable': nbt,
+					'function': /\bdata/,
+					'variable': new RegExp(`((?<=${storage.source} )(${nbt.source})|[^ ]*$)`),
+					'string': new RegExp(` ${storage.source}|${string.source}`)
 					// 'variable': variable,
 					// 'number': number,
 					// 'punctuation': /[()',]/
@@ -40,7 +42,7 @@
 			{
 				'pattern': /^\s*function #?[a-z_\-\.0-9]+(:[a-z_\-/\.0-9]+)?/m,
 				'inside': {
-					'function': /\bfunction\b/i,
+					'function': /\bfunction/,
 					'string': resourcePath,
 					// 'variable': variable,
 					// 'number': number,
@@ -50,7 +52,7 @@
 			{
 				'pattern': /^\s*tellraw @[apres](\[.*\])? [\[\{"].*/m,
 				'inside': {
-					'function': /\btellraw\b/i,
+					'function': /\btellraw/,
 					'string': selector,
 					'variable': /[^ ]+$/,
 					// 'number': number,
@@ -60,7 +62,7 @@
 			{
 				'pattern': /^\s*tag @[apres](\[.*\])? (add|remove) [a-zA-Z_\.]+/m,
 				'inside': {
-					'function': /\btag\b/i,
+					'function': /\btag/,
 					'string': selector,
 					'variable': /[a-zA-Z_\.]+$/
 				}
@@ -68,7 +70,7 @@
 			{
 				'pattern': /^\s*item modify entity @[apres](\[.*\])? (([a-z]+\.[a-z0-9]+)|weapon) #?[a-z_\-\.0-9]+(:[a-z_\-/\.0-9]+)?/m,
 				'inside': {
-					'function': /\bitem\b/i,
+					'function': /\bitem/,
 					'string': new RegExp(`(${selector.source})|(${resourcePath.source}$)`),
 					'variable': /([a-z]+\.[a-z0-9]+)|weapon/
 				}
@@ -76,7 +78,7 @@
 			{
 				'pattern': /^\s*scoreboard ((players (set (@[apres](\[.*\])?|(\$|#)[a-zA-z_\.]*) [a-zA-z_\.]+ \d+))|objectives add )/m,
 				'inside': {
-					'function': /\bscoreboard\b/i,
+					'function': /\bscoreboard/,
 					'string': new RegExp(`${selector.source}|(\$|#)[a-zA-z_\.]*`),
 					'variable': /[^ ]+$/
 				}

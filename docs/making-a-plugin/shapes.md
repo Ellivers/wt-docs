@@ -96,9 +96,7 @@ Step-by step instructions on how to make a new shape for the Shape Generation To
   `wt.setting.continuous` (Default = available)<br></br>
   `wt.setting.secondary_degrees` (Default = unavailable)<br></br>
 
-6. Use the [`process_start/brush/start` hook](hooks#process_startbrushstart) to check if your brush is selected with its predicate, and if so, call the `worldtool:process_start/brush/start/normal/start` function.
-
-7. Make another function, to set up your shape process.
+6. Make another function, to set up your shape process.
 
     ```mcfunction
     # Example of a process setup function
@@ -113,10 +111,30 @@ Step-by step instructions on how to make a new shape for the Shape Generation To
     function worldtool:process_start/brush/start/normal/setup_process/set_process_values
     ```
 
-8. Use the [`process_start/brush/normal_start/processes` hook](hooks#process_startbrushnormal_startprocesses) to check if your brush is selected with its predicate, and if so, run your process setup function.
+7. Use the [`process_start/shapes/processes` hook](hooks#process_startshapesprocesses) to check if your shape is selected with its predicate, and if so, run your process setup function.
 
-9. [Follow these steps to make your process work](processes#setting-up-files), and you're all set!
+8. [Follow these steps to make your process work](processes#setting-up-files), and you're all set!
 
 ## Extra: Making a Preview
 
+Instructions on how to make a preview with particles for your shape.
 
+1. Use the [`ui_shapes/add_preview_tags` hook](hooks#ui_shapesadd_preview_tags) to add the preview tags you need. For example:
+
+    ```mcfunction word-wrap
+    # Example preview tags to add
+
+    execute if data storage worldtool:storage Temp.ShapeTool{Shape:"myplugin:example",ShapeSettings:{Orientation:"up"}} run tag @s add myplugin.shape.example.up
+    execute if data storage worldtool:storage Temp.ShapeTool{Shape:"myplugin:example",ShapeSettings:{Orientation:"down"}} run tag @s add myplugin.shape.example.down
+    execute if data storage worldtool:storage Temp.ShapeTool{Shape:"myplugin:example"} unless data storage worldtool:storage Temp.ShapeTool.ShapeSettings{Orientation:"up"} unless data storage worldtool:storage Temp.ShapeTool.ShapeSettings{Orientation:"down"} run tag @s add myplugin.shape.example.horizontal
+    ```
+
+2. Use the [`ui_shapes/remove_preview_tags` hook](hooks#ui_shapesremove_preview_tags) to remove all possible tags you added in the previous step.
+
+3. Use the [`particles/shape_previews` hook](hooks#particlesshape_previews) to check for your tag(s) and run your preview functions based off that.
+
+    You can use the `particle minecraft:dust 0.671 0.161 0.875 1.5 ~ ~ ~ 0 .3 0 2 3 force @a[tag=wt.shape_preview_temp]` command to display particles.
+    
+    There are also useful functions to aid you with displaying a shape, such as `worldtool:particles/shape_preview/circle_horizontal/line/load`, `worldtool:particles/shape_preview/circle_horizontal/rotation/load`, and `worldtool:particles/shape_preview/circle_vertical/load`.
+    
+    The shape settings are available through `@s`'s `data.WorldTool.ShapeSettings` data.

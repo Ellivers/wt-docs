@@ -182,6 +182,10 @@ If you have a custom greenery plant source with a non-standard base block requir
 This hook is called when the Greenery process checks what plant table to use.<br></br>
 If you have a custom greenery plant source, you can call its plant table function here.
 
+#### `process/shape_line`
+This hook is called when the type of raycast to use for shape processes is chosen.<br></br>
+You can set the `#shapeRaycastType worldtool` score to something below 1 beforehand, and then call a custom raycast function from here.
+
 #### `process_message/display`
 This hook is called when a process message is displayed before it either ends or continues.<br></br>
 Here, you can display a custom message for your own process. If you add the `wt.message.custom_display` tag, you can disable all standard WorldTool messages that use plural for anything not 1, and singular for 1, in case you're working on translations for a language that does not follow those rules.
