@@ -57,6 +57,8 @@ The <MCFont color="aqua">&lt;Set Positions&gt;</MCFont> button opens a menu prom
 
 <MCFont color="#4cd10f">[Swap Positions]</MCFont> swaps both positions, in case you need that.
 
+With the <MCFont color="dark_aqua">[Shrink Area]</MCFont> and <MCFont color="dark_aqua">[Grow Area]</MCFont> buttons, you can move both positions inwards or outwards 1 block at a time.
+
 ### Nudging
 The <MCFont color="yellow">[Position 1]</MCFont> and <MCFont color="yellow">[Position 2]</MCFont> buttons toggle nudging each position. You can choose to nudge both positions 1 and 2, or only one of them.
 #
