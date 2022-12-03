@@ -48,8 +48,8 @@ const config = {
       navbar: {
         title: 'WorldTool Documentation',
         logo: {
-          alt: 'WorldTool Logo',
-          src: 'img/logo.svg',
+          alt: 'WorldTool Icon',
+          src: 'img/worldtool-icon.svg',
         },
         items: [
           // {
