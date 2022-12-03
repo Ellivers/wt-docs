@@ -336,3 +336,7 @@ The process for generating a sphere shape. Used by the Shape Generation Tool's S
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.sphere`<br></br>
 ]
+
+## Log
+
+The log logs various happenings related to processes not started by players. The log can be viewed with the command `/function worldtool:cmd/view_log` and cleared with the command `/function worldtool:cmd/clear_log`.

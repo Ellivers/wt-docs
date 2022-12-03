@@ -76,7 +76,7 @@
 				}
 			},
 			{
-				'pattern': /^\s*scoreboard ((players (set (@[apres](\[.*\])?|(\$|#)[a-zA-z_\.]*) [a-zA-z_\.]+ \d+))|objectives add )/m,
+				'pattern': /^\s*scoreboard ((players ((set|add) (@[apres](\[.*\])?|(\$|#)[a-zA-z_\.]*) [a-zA-z_\.]+ \d+))|objectives add )/m,
 				'inside': {
 					'function': /\bscoreboard/,
 					'string': new RegExp(`${selector.source}|(\$|#)[a-zA-z_\.]*`),
