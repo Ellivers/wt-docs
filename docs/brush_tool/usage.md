@@ -10,7 +10,7 @@ The Brush Tool is used for quick block placement and modification. **Right-click
 #
 ![The Brush Tool menu](img/main_menu.png)
 
-By default, no brush is selected. Use the <MCFont color="green">[Select New Brush...]</MCFont> button to select a brush to use.
+By default, no brush is selected. Use the <MCFont color="light_purple">[Select New Brush...]</MCFont> button to select a brush to use.
 #
 With most brushes, you can adjust the <MCFont color="#00a8a8">Brush size</MCFont> option to set the side length or diameter of the brush. The brush size can only be an odd number and is for most brushes a value from 1 to 39.
 
