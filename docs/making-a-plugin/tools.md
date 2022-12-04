@@ -24,10 +24,11 @@ The additional tags to add before calling these functions are:
 * `wt.two_block_query.text.greenery_replace` - Same as regular `replace`, except it doesn't display an air button when the Normal mode is selected.
 * `wt.two_block_query.text.filter` - "Select a Block to Filter With" / "Select a Block to Not Filter With".
 * `wt.two_block_query.text.randomize_exclude` - "Select a Block to Exclude".
-* `wt.two_block_query.text.standard` - "Select a Block".<br></br>
+* `wt.two_block_query.text.secondary.standard` - "Select a Block".<br></br>
 **Text (Primary block):**
 * `wt.two_block_query.text.replace` - "Select a Block to Replace With".
 * `wt.two_block_query.text.randomize_exclude` - "Select a Block to Exclude".
+* `wt.two_block_query.text.primary.standard` - "Select a Block".
 
 **Custom texts:** Add a custom tag and use the [`ui_general/two_block_query/display_1`](hooks#ui_generaltwo_block_querydisplay_1) (secondary block) and/or [`ui_general/two_block_query/display_2`](hooks#ui_generaltwo_block_querydisplay_2) (primary block) hooks to display your text.
 
