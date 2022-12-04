@@ -21,6 +21,7 @@ To get started, first create a new data pack with the following structure:
 &emsp;&emsp;`worldtool` - WorldTool's namespace, for [hook usage](hooks).<br></br>
 &emsp;&emsp;&emsp;&emsp;`tags`<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`functions`<br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`hooks`
 
 Put your own files in your designated namespace. The `worldtool` namespace is only to be used for [hooks](hooks).
 
@@ -40,3 +41,18 @@ Then, choose which of the following types that apply to your plugin and add them
 * `$settingPlugins`
 * `$languagePlugins`
 * `$greeneryPlugins`
+
+It can also be a good idea to save some sort of version for your plugin, for purposes such as checking 
+
+```mcfunction
+# Example of a plugin load function
+
+scoreboard players add $plugins worldtool 1
+
+# This plugin would affect or add to the General Tool
+scoreboard players add $generalToolPlugins worldtool 1
+
+# Set this plugin's translations, if they haven't been set before
+execute unless score #plugin.example.version worldtool matches 1 run function worldtool:language/reload
+scoreboard players set #plugin.example.version worldtool 1
+```

@@ -21,7 +21,7 @@
 		],
 		'command': [
 			{
-				'pattern': new RegExp(`^execute( (if|unless) (blocks${' [~\\.\\d]+'.repeat(9)} (all|masked)|data storage ${storage.source} ${nbt.source}))*( run)?`, 'm'),
+				'pattern': new RegExp(`^execute( (if|unless) (blocks${' [~\\.\\d]+'.repeat(9)} (all|masked)|data storage ${storage.source} ${nbt.source}|score (${selector.source}|(\\$|#)[a-zA-z_\\.]*)) [a-zA-z_\\.]+ matches \\d+)*( run)?`, 'm'),
 				'inside': {
 					'function': /\bexecute/,
 					'variable': new RegExp(`( [~\\.\\d]+)|((?<=${storage.source} )(${nbt.source}))`),
