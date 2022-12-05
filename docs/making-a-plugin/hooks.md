@@ -432,6 +432,9 @@ This hook is called when the available axes are decided for the shape previe.
 This hook is called when all available shapes are listed.<br></br>
 If you have a custom shape, you can list it here as a button.
 
+#### `uninstall`
+This hook is called when WorldTool is uninstalled.
+
 #### `use_tool/add_tags`
 This hook is called when tags for the right-clicked tool are added.<br></br>
 The `wt.raycast_normal` and `wt.raycast_before` tags can be removed/added to decide which type of raycast to use.

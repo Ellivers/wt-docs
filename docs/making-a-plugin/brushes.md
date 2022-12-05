@@ -19,7 +19,7 @@ Step-by-step instructions on how to make a brush for the Brush Tool:
         {
             "function": "minecraft:set_lore",
             "lore": [
-                {"nbt":"Translation.\"myplugin.info.selected_brush.example\"","storage": "worldtool:storage","color": "yellow","italic":   false},
+                {"nbt":"Translation.\"myplugin.lore.selected_brush.example\"","storage": "worldtool:storage","color": "yellow","italic":   false},
                 {"nbt":"Translation.\"lore.selected_block\"","storage": "worldtool:storage","color": "light_purple","italic": false},
                 {"nbt":"SelectedItem.tag.WorldTool.PrimaryBlock.State.Name", "entity": "@s","italic": false},
                 "",
