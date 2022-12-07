@@ -8,7 +8,7 @@ Guides and information on various parts of making a plugin for WorldTool. A plug
 
 ## Example
 
-An example plugin can be found [here](http://fake_link_lolol). This plugin adds a General Tool operation and Brush Tool brush that places snow on top of blocks.
+An example plugin can be found [here](https://github.com/Ellivers/worldtool-example-plugin/releases/latest/download/WorldTool-Example-Plugin.zip). This plugin adds a General Tool operation and Brush Tool brush that places snow on top of blocks.
 
 ## Getting Started
 
