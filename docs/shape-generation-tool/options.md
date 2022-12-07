@@ -36,6 +36,6 @@ The <MCFont color="red">[Kill Process]</MCFont> button kills the currently runni
 
 ## Empty Queue
 
-The <MCFont color="#b5146d">[Empty Queue]</MCFont> buttons empties the current [process](../technical/processes) queue. Only use this if something is stuck or went wrong somehow. This does not kill the current process.
+The <MCFont color="#b5146d">[Empty Queue]</MCFont> button empties the current [process](../technical/processes) queue. Only use this if something is stuck or went wrong somehow. This does not kill the current process.
 
 To avoid bugginess, it might be a good idea to use the <MCFont color="red">[Kill Process]</MCFont> button after using <MCFont color="#b5146d">[Empty Queue]</MCFont>. 
