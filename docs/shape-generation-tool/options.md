@@ -32,7 +32,7 @@ Main page: [Settings](../configuration).
 
 ## Kill Process
 
-The <MCFont color="red">[Kill Process]</MCFont> button kills the currently running process, if there is one. Main page: [Processes](../technical/processes).
+The <MCFont color="red">[Kill Process]</MCFont> button kills the currently running [process](../technical/processes), if there is one.
 
 ## Empty Queue
 

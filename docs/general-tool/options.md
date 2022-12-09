@@ -55,7 +55,7 @@ At the top of the menu, the current positions 1 and 2 are displayed.
 
 The <MCFont color="aqua">&lt;Set Positions&gt;</MCFont> button opens a menu prompt that allows you to manually set both positions at once.
 
-<MCFont color="#4cd10f">[Swap Positions]</MCFont> swaps both positions, in case you need that.
+­<MCFont color="#4cd10f">[Swap Positions]</MCFont> swaps both positions, in case you need that.
 
 With the <MCFont color="dark_aqua">[Shrink Area]</MCFont> and <MCFont color="dark_aqua">[Grow Area]</MCFont> buttons, you can move both positions inwards or outwards 1 block at a time.
 
@@ -69,7 +69,7 @@ Using these buttons moves the positions selected with the <MCFont color="yellow"
 
 ## Kill Process
 
-The <MCFont color="red">[Kill Process]</MCFont> button kills the currently running process, if there is one. Main page: [Processes](../technical/processes).
+The <MCFont color="red">[Kill Process]</MCFont> button kills the currently running [process](../technical/processes), if there is one.
 
 ## Empty Queue
 

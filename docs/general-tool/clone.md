@@ -16,7 +16,7 @@ First of all, the <MCFont color="light_purple">[Destination]</MCFont> option let
 The <MCFont>Mode</MCFont> option allows you to choose between two different cloning modes.
 #
 <MCFont color="green">Standard</MCFont>, the default mode, includes all rotation and filter functionality, but does not rotate individual blocks properly. For example, stairs facing one way still face the same way after being rotated.<br></br>
-The <MCFont color="green">Template</MCFont> mode is faster, and rotates individual blocks properly, unlike the other mode. However, the area can only be rotated around the Y axis and mirrored on one the X or Z axes, and the filter functionality is not supported.
+The <MCFont color="green">Template</MCFont> mode is faster, and rotates individual blocks properly, unlike the other mode. However, the area can only be rotated around the Y axis and mirrored on either the X or Z axis, and filter and keep functionality is not supported.
 
 ## Filter
 The <MCFont color="gold">[Filter]</MCFont> option lets you enable a filter to either only clone a certain block (<MCFont color="green">[Normal]</MCFont>), or clone all blocks except a certain block (<MCFont color="gold">[Exclude]</MCFont>). Once enabled, the filter can be disabled by clicking the button again.
@@ -24,9 +24,6 @@ The <MCFont color="gold">[Filter]</MCFont> option lets you enable a filter to ei
 ## Rotating
 This rotation menu can be opened through the <MCFont color="#9122d6">[Rotate...]</MCFont> button.<br></br>
 ![The rotation menu](img/clone_rotation_menu.png)
-:::danger
-update this image
-:::
 
 This is what the menu looks like with the full rotation availability of the <MCFont color="green">Standard</MCFont> [cloning mode](#modes).
 #
