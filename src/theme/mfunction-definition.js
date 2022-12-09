@@ -21,18 +21,18 @@
 		],
 		'command': [
 			{
-				'pattern': new RegExp(`^execute( (if|unless) (blocks${' [~\\.\\d]+'.repeat(9)} (all|masked)|data storage ${storage.source} ${nbt.source}|score (${selector.source}|(\\$|#)[a-zA-z_\\.]*)) [a-zA-z_\\.]+ matches \\d+)*( run)?`, 'm'),
+				'pattern': new RegExp(`^execute( (if|unless) ((blocks${' [~\\.\\d]+'.repeat(9)} (all|masked))|(data storage ${storage.source} ${nbt.source})|(score (${selector.source}|(\\$|#)[a-zA-Z_\\.]*) [a-zA-z_\\.]+ matches \\d+)))*( run)?`, 'm'),
 				'inside': {
 					'function': /\bexecute/,
 					'variable': new RegExp(`( [~\\.\\d]+)|((?<=${storage.source} )(${nbt.source}))`),
-					'string': new RegExp(' ' + storage.source)
+					'string': new RegExp(` ${storage.source}|(${selector.source}|(\\$|#)[a-zA-Z_\\.]*)`)
 				}
 			},
 			{
 				'pattern': new RegExp(`^\\s*data ((modify ((storage ${storage.source} (${nbt.source}) (set|append|prepend) ((value (${string.source}|.*))|(from storage ${storage.source} (${nbt.source})))))))`, 'm'),
 				'inside': {
 					'function': /\bdata/,
-					'variable': new RegExp(`((?<=${storage.source} )(${nbt.source})|[^ ]*$)`),
+					'variable': new RegExp(`(((?<=${storage.source} )(${nbt.source})|[^ ]*$)|${string.source}$)`),
 					'string': new RegExp(` ${storage.source}|${string.source}`)
 					// 'variable': variable,
 					// 'number': number,
@@ -76,10 +76,10 @@
 				}
 			},
 			{
-				'pattern': /^\s*scoreboard ((players ((set|add) (@[apres](\[.*\])?|(\$|#)[a-zA-z_\.]*) [a-zA-z_\.]+ \d+))|objectives add )/m,
+				'pattern': /^\s*scoreboard ((players ((set|add) (@[apres](\[.*\])?|(\$|#)[a-zA-Z_\.]*) [a-zA-Z_\.]+ \d+))|objectives add )/m,
 				'inside': {
 					'function': /\bscoreboard/,
-					'string': new RegExp(`${selector.source}|(\$|#)[a-zA-z_\.]*`),
+					'string': new RegExp(`${selector.source}|(\\$|#)[a-zA-Z_\\.]*`),
 					'variable': /[^ ]+$/
 				}
 			}

@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import MCFont from '@site/src/components/minecraft-font'
+
 # Usage
 The Shape Generation Tool is used for generating 3D structures with one position as a base. Its menu can be opened by either **dropping the tool** or **right-clicking on a block**.
 #
