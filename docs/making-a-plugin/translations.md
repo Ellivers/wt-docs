@@ -18,13 +18,18 @@ If the translation is stored as a JSON string, you can add `"interpret":true` to
 The [`language/en_us` hook](hooks#languageen_us) can be used to add translations to the existing language: `English (US)`.<br></br>
 For the sake of compatibility and future-proofing, please either add a prefix to custom translation keys, or use your own storage for them.
 
+```mcfunction
+# Adds the translation "myplugin.info.example_translation"
+data modify storage worldtool:storage Translation."myplugin.info.example_translation" set value "Example translation!"
+```
+
 ## Adding a Language
 
 :::note
 If you have a language that you would like to add to WorldTool, please contact me on [Discord](https://discord.gg/jn8d4zb) about it, or open a [pull request](https://github.com/Ellivers/WorldTool/pulls).
 :::
 
-Make a function file that sets the `Language` value to an appropriate ID, copy-paste all translations from the default `worldtool:language/en_us` function and translate them.
+To begin, make a function file that sets the `Language` value to an appropriate ID, copy-paste all translations from the default `worldtool:language/en_us` function and translate them.
 
 To allow other plugins to utilize your language, add a function tag to your plugin and call it at the bottom of the function. To ensure that custom translations that other plguins add are displayed correctly, call the [hook](hooks#languageen_us) for the default WorldTool `en_us` language above your own function tag.
 

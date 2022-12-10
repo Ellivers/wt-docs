@@ -5,7 +5,7 @@ sidebar_position: 2
 import MCFont from '@site/src/components/minecraft-font'
 
 # Options
-The Options menu can be reached with the <MCFont color="aqua">[Options...]</MCFont> button in the [Shape Generation Tool's initial menu](usage).
+The Options menu can be reached with the <MCFont color="aqua">[Options...]</MCFont> button in the [Shape Generation Tool's menu](usage).
 #
 The Options menu:<br></br>
 ![The options menu](img/options_menu.png)

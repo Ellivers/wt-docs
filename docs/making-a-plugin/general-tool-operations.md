@@ -22,7 +22,7 @@ tag @s add myplugin.menu.example
 function worldtool:ui_general/back_button
 
 # Display the menu itself
-tellraw @s {"nbt":"Translation.\"some_menu_text\"","storage":"worldtool:storage"}
+tellraw @s {"nbt":"Translation.\"myplugin.some_menu_text\"","storage":"worldtool:storage"}
 
 # Display a close button
 function worldtool:ui/close_button
@@ -32,10 +32,16 @@ function worldtool:ui/anti_feedback_chat_message/load
 ```
 
 ## Block Selection
-If you want a [block selection menu](../chat-menu-system#block-selection) directly on your main menu, call the `primary`, `secondary` or `both` function inside `worldtool:ui_general/input/start` and then use the [`input/primary_block`](hooks#inputprimary_block) and/or [`input/secondary_block`](hooks#inputsecondary_block) hooks to run something when a block is selected.
+If you want a [block selection menu](../chat-menu-system#block-selection) directly on your main menu, call the `primary`, `secondary` or `both` function inside `worldtool:ui_general/input/start/`, and then use the [`input/primary_block`](hooks#inputprimary_block) and/or [`input/secondary_block`](hooks#inputsecondary_block) hooks to run something when a block is selected.
 
 ## Start
-General Tool operations are started with a function that adds a setup tag and runs the function `worldtool:process_start/common/load`. Make sure to remove the tag in the [`ui/remove_menu_tags` hook](hooks#uiremove_menu_tags).
+General Tool operations are started with a function that adds a setup tag and runs the function `worldtool:process_start/general/load`. Make sure to remove the tag in the [`ui/remove_menu_tags` hook](hooks#uiremove_menu_tags).
+
+```mcfunction
+# Example of an operation starting function
+tag @s add mplugin.setup.example
+function worldtool:process_start/general/load
+```
 
 ## Set Up Process
 Use the [`process_start/common/setup_process` hook](hooks#process_startcommonsetup_process) to check for your setup and run a function to set up your process.
@@ -55,11 +61,11 @@ function worldtool:process_start/general/set_process_values
 # Remove the setup tag
 tag @s remove myplugin.setup.example
 
-# This last line is unneeded if your process does not affect anything
+# This last line is unneeded if your process does not affect any blocks
 function worldtool:technical/save_load/backup/load
 ```
 
-If you want your menu to re-open after the process has started, use the [`ui/reopen_menu/after_starting` hook](hooks#uireopen_menuafter_startingq).
+If you want your menu to re-open after the process has started, use the [`ui/reopen_menu/after_starting` hook](hooks#uireopen_menuafter_starting).
 
 ## Run Process
 Main page: [Processes](processes).

@@ -15,7 +15,7 @@ An example plugin can be found [here](https://github.com/Ellivers/worldtool-exam
 To get started, first create a new data pack with the following structure:
 
 `pack.mcmeta` - Your [pack.mcmeta](https://minecraft.fandom.com/wiki/Data_pack#pack.mcmeta) file.<br></br>
-`data`
+`data`<br></br>
 &emsp;&emsp;`namespace` - Your own namespace, you can call it whatever you want.<br></br>
 &emsp;&emsp;&emsp;&emsp;`functions`<br></br>
 &emsp;&emsp;`worldtool` - WorldTool's namespace, for [hook usage](hooks).<br></br>
@@ -42,7 +42,7 @@ Then, choose which of the following types that apply to your plugin and add them
 * `$languagePlugins`
 * `$greeneryPlugins`
 
-It can also be a good idea to save some sort of version for your plugin, for purposes such as checking 
+It can also be a good idea to save some sort of version for your plugin.
 
 ```mcfunction
 # Example of a plugin load function

@@ -8,6 +8,16 @@ sidebar_position: 4
 
 ## Setting up Blocks per Tick
 
+A "blocks per tick" value is simply how many blocks the process handles every tick. This is not required, but can help for customizability.
+
+All you need to do is add your blocks per tick configuration with the [`setup_blocks_per_tick` hook](hooks#setup_blocks_per_tick).
+
+```mcfunction
+# Sets the default blocks per tick value and different preset values for the "myplugin:example" process
+execute unless data storage worldtool:storage BlocksPerTick.Processes[{ID:"myplugin:example"}] run data modify storage worldtool:storage BlocksPerTick.Processes append value {ID:"myplugin:example",Value:4000,Presets:{Low:600,Medium:2000,High:4000}}
+```
+
+You can then get the current value for your process with the `BlocksPerTick.Processes[{ID:"myplugin:example"}].Value` data.
 
 ## Setting Up Files
 

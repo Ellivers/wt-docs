@@ -39,7 +39,7 @@ A process is started by inputting a compound with some data.
 &emsp;&emsp;&emsp;&emsp;`State` (Compound) - The block's state.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Name` (String) - The block's ID.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Other values)<br></br>
-&emsp;&emsp;&emsp;&emsp;`Data` (Compound, optional) - The block's data.
+&emsp;&emsp;&emsp;&emsp;`Data` (Compound, optional) - The block's data.<br></br>
 `AffectedArea` (Compound, optional) - Information to give to the backup process, if the affected area is not within the standard positions.<br></br>
 &emsp;&emsp;`From` (List of 3 doubles) - The first corner.<br></br>
 &emsp;&emsp;`To` (List of 3 doubles) - The second corner.<br></br>
@@ -51,14 +51,14 @@ A list of all processes and their most important data. In no particular order.
 &lt;&gt; around a value denotes that the value is not always there.
 
 ### Fill
-The process for filling an area. Used by the General Tool's Fill operation and the Brush Tool's Place brush.<br></br>
+The process for filling an area. Used by the General Tool's [Fill operation](../general-tool/fill) and the Brush Tool's [Place brush](../brush_tool/place).<br></br>
 `ID`: `worldtool:fill`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.fill`<br></br>
 ]
 
 ### Replace
-The process for replacing blocks in an area. Used by the General Tool's Replace operation.<br></br>
+The process for replacing blocks in an area. Used by the General Tool's [Replace operation](../general-tool/replace).<br></br>
 `ID`: `worldtool:replace`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.replace`<br></br>
@@ -67,7 +67,7 @@ The process for replacing blocks in an area. Used by the General Tool's Replace 
 ]
 
 ### Filter Measure
-The process for counting specific blocks in an area. Used by the General Tool's Measure > Filter operation.<br></br>
+The process for counting specific blocks in an area. Used by the General Tool's [Measure > Filter operation](../general-tool/measure).<br></br>
 `ID`: `worldtool:filter_measure`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.filter_measure`<br></br>
@@ -76,7 +76,7 @@ The process for counting specific blocks in an area. Used by the General Tool's 
 ]
 
 ### Clone
-The process for cloning an area to another place. Used by the General Tool's Clone operation with the Standard mode.<br></br>
+The process for cloning an area to another place. Used by the General Tool's [Clone operation](../general-tool/clone) with the [Standard mode](../general-tool/clone#modes).<br></br>
 `ID`: `worldtool:clone`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.clone`<br></br>
@@ -104,7 +104,7 @@ The process for cloning an area to another place. Used by the General Tool's Clo
 }
 
 ### Randomization Source
-The process for selecting a source for randomization. Used by the General Tool's Randomize operation.<br></br>
+The process for selecting a source for randomization. Used by the General Tool's [Randomize operation](../general-tool/randomize#select-source).<br></br>
 `ID`: `worldtool:randomization_source`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.randomization_source`<br></br>
@@ -113,7 +113,7 @@ The process for selecting a source for randomization. Used by the General Tool's
 ]
 
 ### Randomize
-The process for picking random blocks. Used by the General Tool's Randomize operation.<br></br>
+The process for picking random blocks. Used by the General Tool's [Randomize operation](../general-tool/randomize).<br></br>
 `ID`: `worldtool:randomize`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.randomize`<br></br>
@@ -122,7 +122,7 @@ The process for picking random blocks. Used by the General Tool's Randomize oper
 ]
 
 ### Save Area
-The process for saving an area to data. Used for backups, as well as by the General Tool's Copy operation, and Clone operation with the Template mode.<br></br>
+The process for saving an area to data. Used for backups, as well as by the General Tool's [Copy operation](../general-tool/options#copy-and-paste), and [Clone operation](../general-tool/clone) with the [Template mode](../general-tool/clone#modes).<br></br>
 `ID`: `worldtool:save_area`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.save_area`<br></br>
@@ -158,7 +158,7 @@ The process for saving an area to data. Used for backups, as well as by the Gene
 }
 
 ### Load Area
-The process for loading an area from data. Used by undo, redo, as well as by the General Tool's Paste operation, and Clone operation with the Template mode.<br></br>
+The process for loading an area from data. Used by [undo](../general-tool/options#undo-and-redo), [redo](../general-tool/options#undo-and-redo), as well as by the General Tool's [Paste operation](../general-tool/options#copy-and-paste), and [Clone operation](../general-tool/clone) with the [Template mode](../general-tool/clone#modes).<br></br>
 `ID`: `worldtool:load_area`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.load_area`<br></br>
@@ -176,7 +176,7 @@ The process for loading an area from data. Used by undo, redo, as well as by the
 }
 
 ### Checkered
-The process for placing an every-other-block pattern. Used by the General Tool's Checkered operation.<br></br>
+The process for placing an every-other-block pattern. Used by the General Tool's [Checkered operation](../general-tool/checkered).<br></br>
 `ID`: `worldtool:checkered`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.checkered`<br></br>
@@ -189,7 +189,7 @@ The process for placing an every-other-block pattern. Used by the General Tool's
 ]
 
 ### Shell
-The process for placing a shell around the inside of the area. Used by the General Tool's Shell operation.<br></br>
+The process for placing a shell around the inside of the area. Used by the General Tool's [Shell operation](../general-tool/shell).<br></br>
 `ID`: `worldtool:shell`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.shell`<br></br>
@@ -206,7 +206,7 @@ The process for placing a shell around the inside of the area. Used by the Gener
 ]
 
 ### Outline
-The process for outlining an area. Used by the General Tool's Outline operation.<br></br>
+The process for outlining an area. Used by the General Tool's [Outline operation](../general-tool/outline).<br></br>
 `ID`: `worldtool:outline`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.outline`<br></br>
@@ -216,7 +216,7 @@ The process for outlining an area. Used by the General Tool's Outline operation.
 ]
 
 ### Greenery
-The process for placing greenery. Used by the General Tool's Greenery operation and the Brush Tool's Greenery brush.<br></br>
+The process for placing greenery. Used by the General Tool's [Greenery operation](../general-tool/greenery) and the Brush Tool's [Greenery brush](../brush_tool/greenery).<br></br>
 `ID`: `worldtool:greenery`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.greenery`<br></br>
@@ -239,7 +239,7 @@ The process for placing greenery. Used by the General Tool's Greenery operation 
 ]
 
 ### Shatter
-The process for shattering blocks in an area. Used by the General Tool's Shatter operation.<br></br>
+The process for shattering blocks in an area. Used by the General Tool's [Shatter operation](../general-tool/shatter).<br></br>
 `ID`: `worldtool:shatter`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.shatter`<br></br>
@@ -249,7 +249,7 @@ The process for shattering blocks in an area. Used by the General Tool's Shatter
 ]
 
 ### Repeat
-The process for repeating an area multiple times. Used by the General Tool's Repeat operation.<br></br>
+The process for repeating an area multiple times. Used by the General Tool's [Repeat operation](../general-tool/repeat).<br></br>
 `ID`: `worldtool:repeat`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.repeat`<br></br>
@@ -270,7 +270,7 @@ The process for repeating an area multiple times. Used by the General Tool's Rep
 }
 
 ### Smooth
-The process for smoothing an area. Used by the General Tool's Smooth operation.<br></br>
+The process for smoothing an area. Used by the General Tool's [Smooth operation](../general-tool/smooth).<br></br>
 `ID`: `worldtool:smooth`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.smooth`<br></br>
@@ -290,14 +290,14 @@ The process for smoothing an area. Used by the General Tool's Smooth operation.<
 }
 
 ### Command List
-The process for finding commands from command blocks. Used by the General Tool's Command List operation.<br></br>
+The process for finding commands from command blocks. Used by the General Tool's [Command List operation](../general-tool/command-list).<br></br>
 `ID`: `worldtool:command_list`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.command_list`<br></br>
 ]
 
 ### Paint
-The process for painting blocks. Used by the Brush Tool's Paint brush.<br></br>
+The process for painting blocks. Used by the Brush Tool's [Paint brush](../brush_tool/paint).<br></br>
 `ID`: `worldtool:paint`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.paint`<br></br>
@@ -305,7 +305,7 @@ The process for painting blocks. Used by the Brush Tool's Paint brush.<br></br>
 ]
 
 ### Replace (Brush)
-Another process for replacing blocks in an area. Used by the Brush Tool's Replace brush.<br></br>
+Another process for replacing blocks in an area. Used by the Brush Tool's [Replace brush](../brush_tool/replace).<br></br>
 `ID`: `worldtool:replace_brush`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.replace_brush`<br></br>
@@ -315,7 +315,7 @@ Another process for replacing blocks in an area. Used by the Brush Tool's Replac
 ]
 
 ### Cylinder
-The process for generating a cylinder shape. Used by the Shape Generation Tool's Cylinder shape.<br></br>
+The process for generating a cylinder shape. Used by the Shape Generation Tool's [Cylinder shape](../shape-generation-tool/cylinder).<br></br>
 `ID`: `worldtool:cylinder`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;<`wt.process.cylinder.vertical`><br></br>
@@ -323,7 +323,7 @@ The process for generating a cylinder shape. Used by the Shape Generation Tool's
 ]
 
 ### Cone
-The process for generating a cone shape. Used by the Shape Generation Tool's Cone shape.<br></br>
+The process for generating a cone shape. Used by the Shape Generation Tool's [Cone shape](../shape-generation-tool/cone).<br></br>
 `ID`: `worldtool:cone`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;<`wt.process.cone.vertical`><br></br>
@@ -331,7 +331,7 @@ The process for generating a cone shape. Used by the Shape Generation Tool's Con
 ]
 
 ### Sphere
-The process for generating a sphere shape. Used by the Shape Generation Tool's Sphere shape.<br></br>
+The process for generating a sphere shape. Used by the Shape Generation Tool's [Sphere shape](../shape-generation-tool/sphere).<br></br>
 `ID`: `worldtool:sphere`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.sphere`<br></br>
