@@ -7,8 +7,29 @@ A process is some code that repeats itself and is run every tick until it's done
 
 Processes can store blocks they use in the chunk at 27450 19.
 
+## Command Processes
+A process can not only be started by users through the tool items, but can also be handled without player interaction, through commands.
+
+To initiate a process using commands, you first need to set the desired process data inside the `CmdProcess` compound in the `worldtool:storage` storage. Look further down on this page for process data that can be used, as well as data for specific processes.
+
+To start the process, run the `worldtool:cmd/start_a` or `worldtool:cmd/start_b` function. `start_a` will add the specified process to the process queue if there is already a process running. `start_b` will do nothing if a process is already running. If the process cannot be started due to invalid data, this will be written in the [log](#log).
+
+Example of starting a regular fill process:
+
+```mcfunction
+data modify storage worldtool:storage CmdProcess set value {DisplayName:'"Example"',ID:"worldtool:fill",Tags:["wt.process.fill"],Positions:{1:[10d,70d,10d],2:[20d,80d,20d]},BlockPositions:{Primary:[0d,255d,0d]}}
+function worldtool:cmd/start_a
+```
+
+In the above example:
+* The process' name is set to be displayed as "Example"
+* The process ID is set to "worldtool:fill"
+* The process is given the tag "wt.process.fill"
+* The process is set to affect the area from the coordinates 10, 70, 10 to 20, 80, 20
+* The block for the process to use (fill with) is specified to be taken from the coordinates 0, 255, 0
+
 ## Process Data
-A process is started by inputting a compound with some data.
+A process is started by inputting a compound with some data. "Manually set" and "Automatically set" are relevant when starting a process through user input (one of the tool items). 
 #
 **Manually set:**<br></br>
 `ID` (String) - The process ID<br></br>
@@ -287,6 +308,7 @@ The process for smoothing an area. Used by the General Tool's [Smooth operation]
 ]<br></br>
 `Input`: {<br></br>
 &emsp;&emsp;`Threshold` (Integer) - The maximum distance in blocks to check for an edge's size.<br></br>
+&emsp;&emsp;`Intensity` (Integer, 1-5) - How strictly to round corner smoothing values. The rounding value used is 10 minus the inputted intensity. For example, an intensity of 5 (rounding value 10-5 = 5) would lead to the value 0.**5** being rounded to 1, like rounding normally works.<br></br>
 }
 
 ### Command List

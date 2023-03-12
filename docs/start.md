@@ -10,7 +10,7 @@ WorldTool is a world-editing data pack for Minecraft with a large variety of fea
 
 ## Setup
 
-* [Download](https://datapackcenter.com/projects/worldtool.149/download) WorldTool. If you do not know how to install a data pack, refer to a guide such as [this one](https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack) (text) or [this one](https://youtu.be/C3zFd8pxFls) (video).
+* [Download](https://api.smithed.dev/v2/download?pack=worldtool) WorldTool. If you do not know how to install a data pack, refer to a guide such as [this one](https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack) (text) or [this one](https://youtu.be/C3zFd8pxFls) (video).
 * Make sure you have cheats enabled (singleplayer) or are an operator (server). If you are using this on a server, make sure the `enable-command-block` server property is enabled.
 * To finalize the installation of WorldTool, use the `/reload` command in-game, or restart the world.
 * Run the command `/function worldtool:give` in-game to recieve all the necessary tools to start your world editing!
@@ -24,6 +24,8 @@ In order to be able to use WorldTool in a custom dimension, you need to:
 3. Wait a few seconds
 4. Run the command `/function worldtool:technical/load/set_base_blocks`
 5. Done!
+
+Be aware that only custom dimensions that include the Y-level 0 are compatible.
 
 ## The Three Tools
 [General Tool](category/general-tool) - Operations that involve an area made up of two corner points.<br></br>
