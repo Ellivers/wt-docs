@@ -8,7 +8,7 @@ import MCFont from '@site/src/components/minecraft-font'
 
 The Shatter menu can be found with the <MCFont color="red">[Shatter...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation breaks blocks, causing particles and sound.
 #
-![The Shatter menu](img/shatter_menu.png)
+![[The Shatter menu]](img/shatter_menu.png)
 
 The [block selection menu](../chat-menu-system#block-selection) at the bottom of the menu starts the Shatter operation once you select a block with it. Selecting a block in the menu the <MCFont color="gold">[Replace...]</MCFont> button opens also starts the opreation.
 

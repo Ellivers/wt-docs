@@ -8,7 +8,7 @@ import MCFont from '@site/src/components/minecraft-font'
 
 The Clone menu can be found with the <MCFont color="dark_blue">[Clone...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation allows you to copy or move an area from one place to another.
 #
-![The Clone menu](img/clone_menu.png)
+![[The Clone menu]](img/clone_menu.png)
 
 First of all, the <MCFont color="light_purple">[Destination]</MCFont> option lets you toggle between placing the cloned area at a right-clicked block in the world (<MCFont color="light_purple">At Block</MCFont>) and placing the cloned area at your player position (<MCFont color="light_purple">At Player</MCFont>).
 
@@ -23,14 +23,14 @@ The <MCFont color="gold">[Filter]</MCFont> option lets you enable a filter to ei
 
 ## Rotating
 This rotation menu can be opened through the <MCFont color="#9122d6">[Rotate...]</MCFont> button.<br></br>
-![The rotation menu](img/clone_rotation_menu.png)
+![[The rotation menu]](img/clone_rotation_menu.png)
 
 This is what the menu looks like with the full rotation availability of the <MCFont color="green">Standard</MCFont> [cloning mode](#modes).
 #
 In this rotation menu, you can change the rotation in 90° steps and toggle mirroring on the different axes.
 
 Once the menu has been opened, this **rotation helper** shows up in front of you:<br></br>
-![The rotation helper observer buddy](img/clone_rotation_helper.png)
+![[The rotation helper observer buddy]](img/clone_rotation_helper.png)
 
 This serious-looking little buddy helps you by turning its head according to the rotation and mirror axes you select. The red dot shows the **starting position**, which is where the rotation helper faces when there's no rotation active.
 #

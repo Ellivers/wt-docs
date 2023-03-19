@@ -5,10 +5,10 @@ sidebar_position: 2
 import MCFont from '@site/src/components/minecraft-font'
 
 # Options
-The Options menu can be reached with the <MCFont color="aqua">[Options...]</MCFont> button in the [Shape Generation Tool's menu](usage).
+The Options menu can be reached with the <MCFont color="aqua">[✎Options...]</MCFont> button in the [Shape Generation Tool's menu](usage).
 #
 The Options menu:<br></br>
-![The options menu](img/options_menu.png)
+![[The options menu]](img/options_menu.png)
 
 ## Undo and Redo
 
@@ -30,7 +30,7 @@ The <MCFont color="#9729ff">[Preview Shape]</MCFont> option toggles whether to s
 
 ## Settings
 
-Main page: [Settings](../configuration).
+The <MCFont color="green">[⚙Settings...]</MCFont> button opens the settings menu. Main page: [Settings](../configuration).
 
 ## Kill Process
 

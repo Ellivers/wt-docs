@@ -7,7 +7,7 @@ import MCFont from '@site/src/components/minecraft-font'
 # Usage
 The Shape Generation Tool is used for generating 3D structures with one position as a base. Its menu can be opened by either **dropping the tool** or **right-clicking on a block**.
 #
-![The default state of the main Shape Generation Tool menu](img/main_menu.png)
+![[The default state of the main Shape Generation Tool menu]](img/main_menu.png)
 
 The way it looks in the image above is the default state of the menu.
 #
@@ -46,20 +46,22 @@ The <MCFont color="yellow">[Hollow]</MCFont> option toggles whether the inside o
 
 ## Adjust Position
 
-The Adjust Position menu allows you to nudge the set position.<br></br>
-![The Adjust Position menu](img/adjust_position_menu.png)
+The Adjust Position menu can be opened using the <MCFont color="#3430ff">[⇆Adjust Position...]</MCFont> button, and allows you to change the set position.<br></br>
+![[The Adjust Position menu]](img/adjust_position_menu.png)
 
 At the top of the menu, the current position is displayed.
 
-<MCFont color="gold">[-X]</MCFont><MCFont color="gold">[+X]</MCFont><br></br>
-<MCFont color="gold">[-Y]</MCFont><MCFont color="gold">[+Y]</MCFont><br></br>
-<MCFont color="gold">[-Z]</MCFont><MCFont color="gold">[+Z]</MCFont><br></br>
-Using these buttons moves the position accordingly.
+The <MCFont color="#d534eb">[Teleport]</MCFont> button next to the set position can be used to teleport you to that position.
+
+­<MCFont color="gold">[-X]</MCFont><MCFont color="gold">[+X]</MCFont><br></br>
+­<MCFont color="gold">[-Y]</MCFont><MCFont color="gold">[+Y]</MCFont><br></br>
+­<MCFont color="gold">[-Z]</MCFont><MCFont color="gold">[+Z]</MCFont><br></br>
+Using these buttons moves the position accordingly. The <MCFont>Step Size</MCFont> option lets you specify how many blocks to move the position at a time.
 
 The <MCFont color="aqua">&lt;Set Position&gt;</MCFont> button opens a menu prompt that allows you to manually set the position.
 
 ## Options
-Main page: [Options](options).
+The <MCFont color="aqua">[✎Options...]</MCFont> button opens the options menu. Main page: [Options](options).
 
 ## Continuous Mode
 With the <MCFont color="light_purple">[Continuous Mode]</MCFont> option at the very bottom of the menu, you can enable similar functionality to the [Brush Tool](../brush_tool/usage), A.K.A generating a shape wherever you right-click with the tool.
@@ -67,4 +69,4 @@ With the <MCFont color="light_purple">[Continuous Mode]</MCFont> option at the v
 ## Preview
 While a position is selected (and [particles are on](options#preview-shape)), particles are shown to help preview how the shape will be generated.
 #
-![An example of a preview](img/preview_particles.png)
+![[An example of a preview]](img/preview_particles.png)

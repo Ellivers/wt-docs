@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Start
 ---
 
-# <img src="../img/worldtool-icon.svg" style={{ width:'100px' }}></img> WorldTool Documentation
+# <img src="/worldtool-docs/img/worldtool-icon.svg" style={{ width:'100px' }}></img> WorldTool Documentation
 
 WorldTool is a world-editing data pack for Minecraft with a large variety of features to help your world editing needs.
 
@@ -33,8 +33,12 @@ Be aware that only custom dimensions that include the Y-level 0 are compatible.
 [Shape Generation Tool](category/shape-generation-tool) - Slower operations that involve generating 3D shapes.
 
 :::tip tool controls
-You can see what actions you can perform with each tool's item by hovering over it in your inventory and looking at the tooltip.
+You can see what actions you can perform with each tool's item by looking at their respective tooltip, viewed by hovering your mouse over them in your inventory.
 :::
+
+## Translating WorldTool
+
+If you have a language that you would like to add to WorldTool, please contact me on [Discord](https://discord.gg/jn8d4zb) about it. Languages are available to translate to on [Crowdin](https://crowdin.com/project/worldtool).
 
 ## Documentation Issues
 If you feel something should be added to this documentation or if you find something you feel is incorrect, please open an issue [here](https://github.com/Ellivers/wt-docs/issues).

@@ -9,10 +9,10 @@ import MCFont from '@site/src/components/minecraft-font'
 The General Tool (has the item name "Set Position 1" or "Set Position 2") can be used to place a **position 1** and a **position 2** by right-clicking on blocks whilst holding the item in your main hand.
 
 **Drop the tool** to switch the position you place.<br></br>
-![Drop the tool to switch between these two](img/position_swapping_instructions.png)
+![[Drop the tool to switch between these two]](img/position_swapping_instructions.png)
 ## Initial menu
-If both positions have been set, the <MCFont color="green">[Use...]</MCFont> button in this right-click menu should be green.<br></br>
-![The initial General Tool menu](img/initial_menu.png)
+If both positions have been set, the <MCFont color="green">[➤Use...]</MCFont> button in this right-click menu should be green.<br></br>
+![[The initial General Tool menu]](img/initial_menu.png)
 
 You can use the <MCFont color="yellow">[Set Position 1 Here]</MCFont> and <MCFont color="yellow">[Set Position 2 Here]</MCFont> buttons to set either of the positions to your current player position.
 
@@ -20,13 +20,13 @@ You can use the <MCFont color="yellow">[Set Position 1 Here]</MCFont> and <MCFon
 Since this menu is opened whenever the General Tool is right-clicked, you can **aim into the sky** and right-click to open this menu without having to set a position. Alternatively, you can **sneak and drop the tool** while standing on the ground.
 :::
 
-[Click](../chat-menu-system) the <MCFont color="green">[Use...]</MCFont> button to open the General Tool's main menu.
+[Click](../chat-menu-system) the <MCFont color="green">[➤Use...]</MCFont> button to open the General Tool's main menu.
 
 ## Main menu
 Page 1:<br></br>
-![The main General Tool menu page 1](img/main_menu_page_1.png)<br></br>
+![[The main General Tool menu page 1]](img/main_menu_page_1.png)<br></br>
 Page 2:<br></br>
-![The main General Tool menu page 2](img/main_menu_page_2.png)
+![[The main General Tool menu page 2]](img/main_menu_page_2.png)
 
 Here in the **main menu** is where you can find all the different **operations** the General Tool can perform.
 
@@ -37,4 +37,4 @@ The <MCFont color="#0aad02">[Keep]</MCFont> option at the top of the menu lets y
 ## Particles
 While in a menu, the selected area is marked with particles ([if not disabled](options#particle-outline)). The blue corner marks position 1, while the orange corner marks position 2.
 #
-![The area particles](img/position_particles.png)
+![[The area particles]](img/position_particles.png)

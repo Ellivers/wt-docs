@@ -17,7 +17,7 @@ By default, no structure is selected. To view the currently selected structure o
 
 ## Offset
 The Structure Offset menu can be reached through the main Brush Tool menu.<br></br>
-![The Structure Offset menu](img/structure_offset_menu.png)
+![[The Structure Offset menu]](img/structure_offset_menu.png)
 
 The offset decides where the bottom northwest corner of the structure is placed, relative to the block you use the Brush Tool on. At the top of the menu you can see the current offset.
 #

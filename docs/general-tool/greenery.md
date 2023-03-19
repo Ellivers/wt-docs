@@ -5,11 +5,11 @@ sidebar_position: 13
 import MCFont from '@site/src/components/minecraft-font'
 
 # Greenery
-![Example of what this operation can look like](img/operation_previews/greenery.png)
+![[Example of what this operation can look like]](img/operation_previews/greenery.png)
 
 The Greenery menu can be found with the <MCFont color="green">[Greenery...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation places greenery from a selected biome source above blocks in the selection that can be planted on.
 #
-![The Greenery menu](img/greenery_menu.png)
+![[The Greenery menu]](img/greenery_menu.png)
 
 ## Plant Rate
 The <MCFont>Plant rate</MCFont> option lets you set the percentage chance for each block to have greenery placed on it.

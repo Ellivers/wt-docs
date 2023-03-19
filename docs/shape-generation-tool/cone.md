@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Cone
 
-![An example of what a generated Cone could look like](img/cone_example.png)
+![[An example of what a generated Cone could look like]](img/cone_example.png)
 
 The cone shape.
 #

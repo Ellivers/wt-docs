@@ -190,6 +190,12 @@ You can set the `#shapeRaycastType worldtool` score to something below 1 beforeh
 This hook is called when a process message is displayed before it either ends or continues.<br></br>
 Here, you can display a custom message for your own process. If you add the `wt.message.custom_display` tag, you can disable all standard WorldTool messages that use plural for anything not 1, and singular for 1, in case you're working on translations for a language that does not follow those rules.
 
+#### `process_start/block_from_data/finish`
+This hook is called when the loading of blocks from data is finished.
+
+#### `process_start/block_from_data/finish.user`
+This hook is called as the user when the loading of blocks from data is finished.
+
 #### `process_start/brush/area/add_tags`
 This hook is called when the type of area to select is decided.<br></br>
 Here, you can remove the `wt.brush_area.flat` and `wt.brush_area.normal` tags and then add whichever tag you want.
@@ -447,15 +453,4 @@ This hook is called when the raycasting of right-clicking a General Tool hits a 
 
 #### `use_tool/remove_tags`
 This hook is called when tags for the right-clicked tool are removed.<br></br>
-If you have any custom tags added in the corresponding `add_tags` hook, you can remove them here.
-
-#### `use_tool/update_block/add_tags`
-This hook is called when tags for which blocks to update from data are added.<br></br>
-Here, you can add or remove the `wt.block.primary` and `wt.block.secondary` tags. The blocks to place are availalable through the storage `worldtool:storage`'s value `Temp.Blocks`.
-
-#### `use_tool/update_block/finish`
-This hook is called when the loading of blocks from data is finished.
-
-#### `use_tool/update_block/remove_tags`
-This hook is called when tags for which blocks to update from data are removed.<br></br>
 If you have any custom tags added in the corresponding `add_tags` hook, you can remove them here.

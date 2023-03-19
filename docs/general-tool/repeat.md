@@ -5,11 +5,11 @@ sidebar_position: 7
 import MCFont from '@site/src/components/minecraft-font'
 
 # Repeat
-![Example of what this operation can look like](img/operation_previews/repeat.png)
+![[Example of what this operation can look like]](img/operation_previews/repeat.png)
 
 The Repeat menu can be found with the <MCFont color="#73086a">[Repeat...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation allows you to make multiple copies of one area and space them out in a grid or line.
 #
-![The Repeat menu](img/repeat_menu.png)
+![[The Repeat menu]](img/repeat_menu.png)
 
 ## Amounts
 The <MCFont>Amount</MCFont> options at the top let you set how many copies to make on each axis. These values **can be negative**, which makes them go the opposite direction.

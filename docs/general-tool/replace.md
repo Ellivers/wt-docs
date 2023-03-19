@@ -8,7 +8,7 @@ import MCFont from '@site/src/components/minecraft-font'
 
 The Replace menu can be found with the <MCFont color="gold">[Replace...]</MCFont> button in the [main General Tool menu](usage#main-menu). It simply replaces all of the specified block(s) that can be found in the area with another block.
 #
-![The first page of the Replace menu](img/replace_menu_1.png)
+![[The first page of the Replace menu]](img/replace_menu_1.png)
 
 The first page of the Replace menu looks like this. Here, you can choose whether to select a certain block to replace (<MCFont color="green">[Normal]</MCFont>), or a certain block to *not* replace (<MCFont color="gold">[Exclude]</MCFont>).
 #

@@ -5,11 +5,11 @@ sidebar_position: 12
 import MCFont from '@site/src/components/minecraft-font'
 
 # Checkered
-![Example of what this operation can look like](img/operation_previews/checkered.png)
+![[Example of what this operation can look like]](img/operation_previews/checkered.png)
 
 The Checkered menu can be found with the <MCFont color="#fc03cf">[Checkered...]</MCFont> button in the [main General Tool menu](usage#main-menu). This operation places a block every other block, making a checkered or striped pattern.
 #
-![The Checkered menu](img/checkered_menu.png)
+![[The Checkered menu]](img/checkered_menu.png)
 
 The [block selection menu](../chat-menu-system#block-selection) at the bottom of the menu starts the Checkered operation once you select a block with it. Selecting a block in the menu the <MCFont color="gold">[Replace...]</MCFont> button opens also starts the opreation.
 

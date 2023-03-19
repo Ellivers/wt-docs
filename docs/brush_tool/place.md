@@ -5,6 +5,9 @@ sidebar_position: 3
 import MCFont from '@site/src/components/minecraft-font'
 
 # Place
+
+![[Before]](img/before.png) ![[After]](img/place_after.png)
+
 The Place brush places a cube of the selected block.
 
 ## Options

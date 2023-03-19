@@ -26,7 +26,9 @@ data modify storage worldtool:storage Translation."myplugin.info.example_transla
 ## Adding a Language
 
 :::note
-If you have a language that you would like to add to WorldTool, please contact me on [Discord](https://discord.gg/jn8d4zb) about it, or open a [pull request](https://github.com/Ellivers/WorldTool/pulls).
+If you have a language that you would like to add to WorldTool, please contact me on [Discord](https://discord.gg/jn8d4zb) about it. Languages are available to translate to on [Crowdin](https://crowdin.com/project/worldtool).
+
+If you already have completed the language as a plugin, you can also open a [pull request](https://github.com/Ellivers/WorldTool/pulls).
 :::
 
 To begin, make a function file that sets the `Language` value to an appropriate ID, copy-paste all translations from the default `worldtool:language/en_us` function and translate them.

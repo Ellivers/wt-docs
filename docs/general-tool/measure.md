@@ -8,7 +8,7 @@ import MCFont from '@site/src/components/minecraft-font'
 
 The Measure menu can be found with the <MCFont color="#264fff">[Measure...]</MCFont> button in the [main General Tool menu](usage#main-menu). Here, you can get various values and info.
 #
-![The Measure menu](img/measure_menu.png)
+![[The Measure menu]](img/measure_menu.png)
 
 The <MCFont color="aqua">[▶Size]</MCFont> operation gets the total volume of the area, as well as the area dimensions (length, width, and height) of it.<br></br>
 The <MCFont color="light_purple">[▶Distance]</MCFont> operation gets the distance between the two set corner positions. The last decimal point of the result is not rounded, but floored.<br></br>
