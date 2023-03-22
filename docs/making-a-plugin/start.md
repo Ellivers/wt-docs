@@ -41,6 +41,7 @@ Then, choose which of the following types that apply to your plugin and add them
 * `$settingPlugins`
 * `$languagePlugins`
 * `$greeneryPlugins`
+* `$blocksPerTickPlugins`
 
 It can also be a good idea to save some sort of version for your plugin.
 

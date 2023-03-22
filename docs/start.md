@@ -3,7 +3,9 @@ sidebar_position: 1
 title: Start
 ---
 
-# <img src="/worldtool-docs/img/worldtool-icon.svg" style={{ width:'100px' }}></img> WorldTool Documentation
+# <img src="/worldtool-docs/img/logo.png" style={{ width:'100px' }}></img><span style={{ verticalAlign:'top', lineHeight:'2' }}> WorldTool Documentation</span>
+
+Welcome to the documentation for WorldTool version 0.6.1!
 
 WorldTool is a world-editing data pack for Minecraft with a large variety of features to help your world editing needs.
 
