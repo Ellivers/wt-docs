@@ -128,7 +128,7 @@ If you have entities to display particles from, you can start doing so here.
 This hook is called when a user disables particles.<br></br>
 If you have a custom menu that called this function, you can return to that menu here.
 
-#### `particles/off`
+#### `particles/on`
 This hook is called when a user enables particles.<br></br>
 If you have a custom menu that called this function, you can return to that menu here.
 

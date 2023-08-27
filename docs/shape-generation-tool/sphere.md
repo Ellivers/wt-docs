@@ -14,5 +14,5 @@ Available options:
 * Precision
 * Orientation
 * Degrees
+* X Rotation
 * Y Rotation
-* X/Z Rotation (with horizontal Orientations)

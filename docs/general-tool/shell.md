@@ -17,6 +17,6 @@ The [block selection menu](../chat-menu-system#block-selection) at the start of 
 The <MCFont color="gold">[Inner Block]</MCFont> option lets you select a block to fill the inside of the area with. Once this option is on, you can use the button again to turn it off.
 
 ## Side Settings
-The <MCFont color="yellow">[Side Settings...]</MCFont> button opens a menu that lets you change the how many blocks thick each side is, as well as what sides to place.
+The <MCFont color="yellow">[Side Settings...]</MCFont> button opens a menu that lets you change how many blocks thick each side is, as well as what sides to place.
 #
 ![[The Side Settings menu]](img/shell_side_settings_menu.png)

@@ -11,6 +11,6 @@ The Measure menu can be found with the <MCFont color="#264fff">[Measure...]</MCF
 ![[The Measure menu]](img/measure_menu.png)
 
 The <MCFont color="aqua">[▶Size]</MCFont> operation gets the total volume of the area, as well as the area dimensions (length, width, and height) of it.<br></br>
-The <MCFont color="light_purple">[▶Distance]</MCFont> operation gets the distance between the two set corner positions. The last decimal point of the result is not rounded, but floored.<br></br>
+The <MCFont color="light_purple">[▶Distance]</MCFont> operation gets the distance between the two set corner positions. The resulting value is floored.<br></br>
 The <MCFont color="green">[▶Get Positions]</MCFont> operation simply gets the two selected positions.<br></br>
-The <MCFont color="gold">[Filter...]</MCFont> button opens a menu that lets you either search for a certain block (<MCFont color="green">[Normal]</MCFont>), or search for all blocks *except* a certain block (<MCFont color="gold">[Exclude]</MCFont>), and gives you the amount found as well as what area dimensions those blocks make up.
+The <MCFont color="gold">[Filter...]</MCFont> button opens a menu that lets you either search for a certain block (<MCFont color="green">[Normal]</MCFont>), or search for all blocks *except* a certain block (<MCFont color="gold">[Exclude]</MCFont>). It gives you the amount of blocks found, as well as what area dimensions those blocks make up.
