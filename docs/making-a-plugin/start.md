@@ -14,7 +14,7 @@ An example plugin can be found [here](https://github.com/Ellivers/worldtool-exam
 
 To get started, first create a new data pack with the following structure:
 
-`pack.mcmeta` - Your [pack.mcmeta](https://minecraft.fandom.com/wiki/Data_pack#pack.mcmeta) file.<br></br>
+`pack.mcmeta` - Your [pack.mcmeta](https://minecraft.wiki/w/Data_pack#pack.mcmeta) file.<br></br>
 `data`<br></br>
 &emsp;&emsp;`namespace` - Your own namespace, you can call it whatever you want.<br></br>
 &emsp;&emsp;&emsp;&emsp;`functions`<br></br>
