@@ -70,7 +70,7 @@ A process is started by inputting a compound with some data. "Manually set" and 
 A list of all additional tags you can add to processes to alter their behavior.
 
 `wt.keep` - Makes the process not replace any existing blocks except for empty ones such as air or water. Works with most processes, but not all.<br></br>
-`wt.no_message` - Removes the message after the process is completed.<br></br>
+`wt.no_message` - Removes the "X affected blocks" message after the process is completed.<br></br>
 `wt.message.non_default` - Removes the "X affected blocks" message after the process is completed, and allows you to enter your own message through the [`process_message/display` hook](../making-a-plugin/hooks#process_messagedisplay).<br></br>
 `wt.dont_end` - Allows you to continue your process through the [`process/continue` hook](../making-a-plugin/hooks#processcontinue) after it has been completed.<br></br>
 `wt.secondary_process_entity` - Creates a secondary process entity you can use during your process.
