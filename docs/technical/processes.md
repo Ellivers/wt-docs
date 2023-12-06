@@ -92,8 +92,8 @@ The process for replacing blocks in an area. Used by the General Tool's [Replace
 `ID`: `worldtool:replace`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.replace`<br></br>
-&emsp;&emsp;<`wt.process.replace.normal`><br></br>
-&emsp;&emsp;<`wt.process.replace.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.replace.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.replace.exclude`&gt;<br></br>
 ]
 
 ### Filter Measure
@@ -101,8 +101,8 @@ The process for counting specific blocks in an area. Used by the General Tool's 
 `ID`: `worldtool:filter_measure`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.filter_measure`<br></br>
-&emsp;&emsp;<`wt.process.filter_measure.normal`><br></br>
-&emsp;&emsp;<`wt.process.filter_measure.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.filter_measure.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.filter_measure.exclude`&gt;<br></br>
 ]
 
 ### Clone
@@ -113,21 +113,21 @@ The process for cloning an area to another place. Used by the General Tool's [Cl
 &emsp;&emsp;`wt.message.clone`<br></br>
 &emsp;&emsp;`wt.message.non_default`<br></br>
 &emsp;&emsp;`wt.secondary_process_entity`<br></br>
-&emsp;&emsp;<`wt.process.clone.move`><br></br>
-&emsp;&emsp;<`wt.process.clone.normal`><br></br>
-&emsp;&emsp;<`wt.process.clone.rotate`><br></br>
-&emsp;&emsp;<`wt.process.clone.filter.normal`><br></br>
-&emsp;&emsp;<`wt.process.clone.filter.exclude`><br></br>
-&emsp;&emsp;<`wt.process.clone.mirror.x`><br></br>
-&emsp;&emsp;<`wt.process.clone.mirror.y`><br></br>
-&emsp;&emsp;<`wt.process.clone.mirror.z`><br></br>
+&emsp;&emsp;&lt;`wt.process.clone.move`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.rotate`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.filter.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.filter.exclude`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.mirror.x`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.mirror.y`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.mirror.z`&gt;<br></br>
 ]<br></br>
 `SecondaryTags`: [<br></br>
-&emsp;&emsp;<`wt.process.clone.filter.normal`><br></br>
-&emsp;&emsp;<`wt.process.clone.filter.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.clone.filter.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.clone.filter.exclude`&gt;<br></br>
 ]<br></br>
-`Input`: {<br></br>
-&emsp;&emsp;`Rotation`: {<br></br>
+`Input`: \{<br></br>
+&emsp;&emsp;`Rotation`: \{<br></br>
 &emsp;&emsp;&emsp;&emsp;`X` (Integer) - Rotation around the X axis<br></br>
 &emsp;&emsp;&emsp;&emsp;`Y` (Integer) - Rotation around the Y axis<br></br>
 &emsp;&emsp;&emsp;&emsp;`Z` (Integer) - Rotation around the Z axis<br></br>
@@ -139,7 +139,7 @@ The process for selecting a source for randomization. Used by the General Tool's
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.randomization_source`<br></br>
 &emsp;&emsp;`wt.no_message`<br></br>
-&emsp;&emsp;<`wt.process.randomization_source.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.randomization_source.exclude`&gt;<br></br>
 ]
 
 ### Randomize
@@ -147,8 +147,8 @@ The process for picking random blocks. Used by the General Tool's [Randomize ope
 `ID`: `worldtool:randomize`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.randomize`<br></br>
-&emsp;&emsp;<`wt.process.randomize.replace.normal`><br></br>
-&emsp;&emsp;<`wt.process.randomize.replace.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.randomize.replace.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.randomize.replace.exclude`&gt;<br></br>
 ]
 
 ### Save Area
@@ -158,28 +158,28 @@ The process for saving an area to data. Used for backups, as well as by the Gene
 &emsp;&emsp;`wt.process.save_area`<br></br>
 &emsp;&emsp;`wt.no_message`<br></br>
 &emsp;&emsp;`wt.dont_reopen_menu`<br></br>
-&emsp;&emsp;<`wt.process.save_area.back_up`><br></br>
-&emsp;&emsp;<`wt.process.save_area.copy`><br></br>
-&emsp;&emsp;<`wt.process.save_area.clone`><br></br>
+&emsp;&emsp;&lt;`wt.process.save_area.back_up`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.save_area.copy`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.save_area.clone`&gt;<br></br>
 ]<br></br>
-`Input`: {<br></br>
+`Input`: \{<br></br>
 &emsp;&emsp;`BackupSlots` (List of strings) - The backup slots (template names) to use.<br></br>
 &emsp;&emsp;`NextPositions`: [ (List) - Lists of position pairs, which make up areas to also also save.<br></br>
-&emsp;&emsp;&emsp;&emsp;{<br></br>
+&emsp;&emsp;&emsp;&emsp;\{<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`1` (List of 3 doubles) - The first corner.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`2` (List of 3 doubles) - The second corner.<br></br>
 &emsp;&emsp;&emsp;&emsp;}<br></br>
-&emsp;&emsp;&emsp;&emsp;{...}<br></br>
+&emsp;&emsp;&emsp;&emsp;\{...}<br></br>
 &emsp;&emsp;]<br></br>
 }<br></br>
-`Output`: {<br></br>
+`Output`: \{<br></br>
 &emsp;&emsp;`SavedAreas`: [ (List) - The areas that have been saved.<br></br>
-&emsp;&emsp;&emsp;&emsp;{<br></br>
+&emsp;&emsp;&emsp;&emsp;\{<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`TemplateList`: [ (List) - The templates that have been saved, and their relative positions.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Slot` (String) - The backup slot (template name).<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Pos` (List of 3 integers) - The template position relative to the process' starting position.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;]<br></br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Positions`: { (Compound) - The corners (area).<br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Positions`: \{ (Compound) - The corners (area).<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`1` (List of 3 doubles) - The first corner.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`2` (List of 3 doubles) - The second corner.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br></br>
@@ -195,7 +195,7 @@ The process for loading an area from data. Used by [undo](../general-tool/option
 &emsp;&emsp;`wt.no_message`<br></br>
 &emsp;&emsp;`wt.dont_reopen_menu`<br></br>
 ]<br></br>
-`Input`: {<br></br>
+`Input`: \{<br></br>
 &emsp;&emsp;`AreaList`: [ (List) - List of areas to load.<br></br>
 &emsp;&emsp;&emsp;&emsp;`TemplateList`: [ (List) - The templates that have been saved, and their relative positions.<br></br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Slot` (String) - The backup slot (template name).<br></br>
@@ -210,12 +210,12 @@ The process for placing an every-other-block pattern. Used by the General Tool's
 `ID`: `worldtool:checkered`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.checkered`<br></br>
-&emsp;&emsp;<`wt.process.checkered.replace.normal`><br></br>
-&emsp;&emsp;<`wt.process.checkered.replace.exclude`><br></br>
-&emsp;&emsp;<`wt.start_with_block`><br></br>
-&emsp;&emsp;<`wt.process.checkered.alternate.x`><br></br>
-&emsp;&emsp;<`wt.process.checkered.alternate.y`><br></br>
-&emsp;&emsp;<`wt.process.checkered.alternate.z`><br></br>
+&emsp;&emsp;&lt;`wt.process.checkered.replace.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.checkered.replace.exclude`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.start_with_block`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.checkered.alternate.x`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.checkered.alternate.y`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.checkered.alternate.z`&gt;<br></br>
 ]
 
 ### Shell
@@ -223,13 +223,13 @@ The process for placing a shell around the inside of the area. Used by the Gener
 `ID`: `worldtool:shell`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.shell`<br></br>
-&emsp;&emsp;<`wt.process.shell.inner_block`><br></br>
-&emsp;&emsp;<`wt.process.shell.side.up`><br></br>
-&emsp;&emsp;<`wt.process.shell.side.down`><br></br>
-&emsp;&emsp;<`wt.process.shell.side.north`><br></br>
-&emsp;&emsp;<`wt.process.shell.side.south`><br></br>
-&emsp;&emsp;<`wt.process.shell.side.east`><br></br>
-&emsp;&emsp;<`wt.process.shell.side.west`><br></br>
+&emsp;&emsp;&lt;`wt.process.shell.inner_block`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shell.side.up`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shell.side.down`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shell.side.north`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shell.side.south`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shell.side.east`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shell.side.west`&gt;<br></br>
 ]<br></br>
 `Input`: [<br></br>
 &emsp;&emsp;`SideSize` (Integer) - The size of the sides.<br></br>
@@ -250,19 +250,19 @@ The process for placing greenery. Used by the General Tool's [Greenery operation
 `ID`: `worldtool:greenery`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.greenery`<br></br>
-&emsp;&emsp;<`wt.process.greenery.remove_current`><br></br>
-&emsp;&emsp;<`wt.process.greenery.replace.normal`><br></br>
-&emsp;&emsp;<`wt.process.greenery.replace.exclude`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.plains`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.sunflower_plains`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.flower_forest`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.taiga`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.desert`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.ocean`><br></br>
-&emsp;&emsp;<`wt.process.greenery.plant_table.warm_ocean`><br></br>
-&emsp;&emsp;<`wt.process.greenery.base.standard`><br></br>
-&emsp;&emsp;<`wt.process.greenery.base.desert`><br></br>
-&emsp;&emsp;<`wt.process.greenery.base.ocean`><br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.remove_current`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.replace.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.replace.exclude`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.plains`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.sunflower_plains`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.flower_forest`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.taiga`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.desert`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.ocean`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.plant_table.warm_ocean`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.base.standard`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.base.desert`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.greenery.base.ocean`&gt;<br></br>
 ]<br></br>
 `Input`: [<br></br>
 &emsp;&emsp;`Rate` (Integer) - The percentage chance to place greenery on a block.<br></br>
@@ -273,9 +273,9 @@ The process for shattering blocks in an area. Used by the General Tool's [Shatte
 `ID`: `worldtool:shatter`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.shatter`<br></br>
-&emsp;&emsp;<`wt.process.shatter.drop_items`><br></br>
-&emsp;&emsp;<`wt.process.shatter.replace.normal`><br></br>
-&emsp;&emsp;<`wt.process.shatter.replace.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.shatter.drop_items`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shatter.replace.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.shatter.replace.exclude`&gt;<br></br>
 ]
 
 ### Repeat
@@ -283,12 +283,12 @@ The process for repeating an area multiple times. Used by the General Tool's [Re
 `ID`: `worldtool:repeat`<br></br>
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.repeat`<br></br>
-&emsp;&emsp;<`wt.process.repeat.filter.normal`><br></br>
-&emsp;&emsp;<`wt.process.repeat.filter.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.repeat.filter.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.repeat.filter.exclude`&gt;<br></br>
 ]<br></br>
 `SecondaryTags`: [<br></br>
-&emsp;&emsp;<`wt.process.repeat.filter.normal`><br></br>
-&emsp;&emsp;<`wt.process.repeat.filter.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.repeat.filter.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.repeat.filter.exclude`&gt;<br></br>
 ]<br></br>
 `Input`: {<br></br>
 &emsp;&emsp;`Amount`: {<br></br>
@@ -306,14 +306,14 @@ The process for smoothing an area. Used by the General Tool's [Smooth operation]
 &emsp;&emsp;`wt.process.smooth`<br></br>
 &emsp;&emsp;`wt.message.non_default`<br></br>
 &emsp;&emsp;`wt.message.smooth`<br></br>
-&emsp;&emsp;<`wt.process.smooth.filter.normal`><br></br>
-&emsp;&emsp;<`wt.process.smooth.filter.exclude`><br></br>
-&emsp;&emsp;<`wt.process.smooth.direction.up`><br></br>
-&emsp;&emsp;<`wt.process.smooth.direction.down`><br></br>
-&emsp;&emsp;<`wt.process.smooth.direction.east`><br></br>
-&emsp;&emsp;<`wt.process.smooth.direction.west`><br></br>
-&emsp;&emsp;<`wt.process.smooth.direction.north`><br></br>
-&emsp;&emsp;<`wt.process.smooth.direction.south`><br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.filter.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.filter.exclude`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.direction.up`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.direction.down`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.direction.east`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.direction.west`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.direction.north`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.smooth.direction.south`&gt;<br></br>
 ]<br></br>
 `Input`: {<br></br>
 &emsp;&emsp;`Threshold` (Integer) - The maximum distance in blocks to check for an edge's size.<br></br>
@@ -341,24 +341,24 @@ Another process for replacing blocks in an area. Used by the Brush Tool's [Repla
 `Tags`: [<br></br>
 &emsp;&emsp;`wt.process.replace_brush`<br></br>
 &emsp;&emsp;`wt.no_message`<br></br>
-&emsp;&emsp;<`wt.process.replace_brush.normal`><br></br>
-&emsp;&emsp;<`wt.process.replace_brush.exclude`><br></br>
+&emsp;&emsp;&lt;`wt.process.replace_brush.normal`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.replace_brush.exclude`&gt;<br></br>
 ]
 
 ### Cylinder
 The process for generating a cylinder shape. Used by the Shape Generation Tool's [Cylinder shape](../shape-generation-tool/cylinder).<br></br>
 `ID`: `worldtool:cylinder`<br></br>
 `Tags`: [<br></br>
-&emsp;&emsp;<`wt.process.cylinder.vertical`><br></br>
-&emsp;&emsp;<`wt.process.cylinder.horizontal`><br></br>
+&emsp;&emsp;&lt;`wt.process.cylinder.vertical`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.cylinder.horizontal`&gt;<br></br>
 ]
 
 ### Cone
 The process for generating a cone shape. Used by the Shape Generation Tool's [Cone shape](../shape-generation-tool/cone).<br></br>
 `ID`: `worldtool:cone`<br></br>
 `Tags`: [<br></br>
-&emsp;&emsp;<`wt.process.cone.vertical`><br></br>
-&emsp;&emsp;<`wt.process.cone.horizontal`><br></br>
+&emsp;&emsp;&lt;`wt.process.cone.vertical`&gt;<br></br>
+&emsp;&emsp;&lt;`wt.process.cone.horizontal`&gt;<br></br>
 ]
 
 ### Sphere
