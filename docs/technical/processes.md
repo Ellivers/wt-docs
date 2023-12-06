@@ -290,8 +290,8 @@ The process for repeating an area multiple times. Used by the General Tool's [Re
 &emsp;&emsp;&lt;`wt.process.repeat.filter.normal`&gt;<br></br>
 &emsp;&emsp;&lt;`wt.process.repeat.filter.exclude`&gt;<br></br>
 ]<br></br>
-`Input`: {<br></br>
-&emsp;&emsp;`Amount`: {<br></br>
+`Input`: \{<br></br>
+&emsp;&emsp;`Amount`: \{<br></br>
 &emsp;&emsp;&emsp;&emsp;`X` (Integer) - The amount/direction to repeat along the X axis.<br></br>
 &emsp;&emsp;&emsp;&emsp;`Y` (Integer) - The amount/direction to repeat along the Y axis.<br></br>
 &emsp;&emsp;&emsp;&emsp;`Z` (Integer) - The amount/direction to repeat along the Z axis.<br></br>
@@ -315,7 +315,7 @@ The process for smoothing an area. Used by the General Tool's [Smooth operation]
 &emsp;&emsp;&lt;`wt.process.smooth.direction.north`&gt;<br></br>
 &emsp;&emsp;&lt;`wt.process.smooth.direction.south`&gt;<br></br>
 ]<br></br>
-`Input`: {<br></br>
+`Input`: \{<br></br>
 &emsp;&emsp;`Threshold` (Integer) - The maximum distance in blocks to check for an edge's size.<br></br>
 &emsp;&emsp;`Intensity` (Integer, 1-5) - How strictly to round corner smoothing values. The rounding value used is 10 minus the inputted intensity. For example, an intensity of 5 (rounding value 10-5 = 5) would lead to the value 0.**5** being rounded to 1, like rounding normally works.<br></br>
 }
