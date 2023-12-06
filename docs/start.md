@@ -12,7 +12,7 @@ WorldTool is a world-editing data pack for Minecraft with a large variety of fea
 
 ## Setup
 
-* [Download](https://github.com/Ellivers/WorldTool/releases/download/v.0.6.1/WorldTool-0.6.1.zip) WorldTool. If you do not know how to install a data pack, refer to a guide such as [this one](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack) (text) or [this one](https://youtu.be/C3zFd8pxFls) (video).
+* [Download](https://github.com/Ellivers/WorldTool/releases/download/v.0.6.2/WorldTool-0.6.2.zip) WorldTool. If you do not know how to install a data pack, refer to a guide such as [this one](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack) (text) or [this one](https://youtu.be/C3zFd8pxFls) (video).
 * Make sure you have cheats enabled (singleplayer) or are an operator (server). If you are using this on a server, make sure the `enable-command-block` server property is enabled.
 * To finalize the installation of WorldTool, use the `/reload` command in-game, or restart the world.
 * Run the command `/function worldtool:give` in-game to recieve all the necessary tools to start your world editing!
