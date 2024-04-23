@@ -13,7 +13,7 @@ By default, no structure is selected. To view the currently selected structure o
 * [Placement](usage#brush-options)
 * ­<MCFont color="gold">Structure Rotation</MCFont> - `0°`, `90°`, `180°`, or `-90°`. Cycles the possible structure Y axis rotations.
 * ­<MCFont color="dark_purple">Structure Mirror</MCFont> - `None`, `Front↔Back`, or `Left↔Right`. Cycles the possible structure mirror directions. `Front↔Back` mirrors on the Z axis, while `Left↔Right` mirrors on the X axis.
-* ­<MCFont color="dark_green">[Structure Offset...]</MCFont> - Opens the [structure offsets](#offsets) menu (see below).
+* ­<MCFont color="dark_green">[Structure Offset...]</MCFont> - Opens the [structure offset](#offset) menu (see below).
 
 ## Offset
 The Structure Offset menu can be reached through the main Brush Tool menu.<br></br>
