@@ -12,7 +12,7 @@ The <MCFont color="#76b297">[▶Command List]</MCFont> button can be found in th
 
 A small set of instructions on how to convert a command block chain list into a function file.
 #
-1. Firstly, you'll need to have access to Minecraft's **output log**. With the vanilla Minecraft launcher, you have to first [enable the log](https://cdn.discordapp.com/attachments/734106483104415856/854123107325575188/unknown.png), and then restart the game for it to show up.
+1. Firstly, you'll need to have access to Minecraft's **output log**. With the vanilla Minecraft launcher, you have to first [enable the log](img/output_log.png), and then restart the game for it to show up.
 2. Select the area with the starts of the command chains you want to copy from, then run the operation.
 3. Copy the desired command block chain list from the output log.
 4. Paste it into your preferred text editor. Something such as [Notepad++](https://notepad-plus-plus.org/) works fine for this. Just make sure the editor supports **Regular Expressions**.

@@ -161,7 +161,7 @@ This hook is called when the progress bar's value is updated.<br></br>
 You can adjust the `#blocksChecked worldtool` score here to affect how much is added to the value.
 
 #### `process/check_tags`
-This hook is called when tags are checked for which process function to run.<br></br>
+This hook is called each tick when tags are checked for which process function to run.<br></br>
 Here, you can check for the tags of and run any custom processes you've added.
 
 #### `process/continue`
@@ -217,10 +217,12 @@ This hook is called when the way the brush should be started is decided.<br></br
 If you have a custom brush, you check if it's selected here, and if so, call the appropriate function.
 
 #### `process_start/common/continue1`
-This hook is called when the common starting system is continued from the first continue point.
+This hook is called when the common starting system is continued from the first continue point.<br></br>
+A continue point is from when the user gets a warning and chooses to continue.
 
 #### `process_start/common/continue2`
-This hook is called when the common starting system is continued from the second continue point.
+This hook is called when the common starting system is continued from the second continue point.<br></br>
+A continue point is from when the user gets a warning and chooses to continue.
 
 #### `process_start/common/load`
 This hook is called when the common starting system is loaded, after the validity of the selected positions is checked.<br></br>
@@ -432,7 +434,7 @@ This hook is called when all tags related to the Shape Generation Tool are remov
 Here, you can remove any custom shape tags you've added and not already removed.
 
 #### `ui_shapes/set_preview_axes`
-This hook is called when the available axes are decided for the shape previe.
+This hook is called when the available axes are decided for the shape preview.
 
 #### `ui_shapes/shape_list`
 This hook is called when all available shapes are listed.<br></br>

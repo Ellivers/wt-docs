@@ -15,4 +15,4 @@ Available options:
 * Orientation
 * Degrees
 * Y Rotation
-* X/Z Rotation (with horizontal Orientations)
+* X/Z Rotation (with horizontal orientations)

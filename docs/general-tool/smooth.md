@@ -11,7 +11,7 @@ The Smooth menu can be found with the <MCFont color="#fc8003">[Smooth...]</MCFon
 ![[The Smooth menu]](img/smooth_menu.png)
 
 ## Filter
-With the <MCFont color="gold">[Filter]</MCFont> option, you can choose what blocks to be affected by the operation's adjustments. You can choose to only affect a certain block (<MCFont color="green">[Normal]</MCFont>) or to affect all blocks *except* a certain block (<MCFont color="gold">[Exclude]</MCFont>).
+With the <MCFont color="gold">[Filter]</MCFont> option, you can choose what blocks to be affected by the operation's adjustments. You can choose to only affect a certain block (<MCFont color="green">[Normal]</MCFont>) or to affect all blocks *except* a certain block (<MCFont color="gold">[Exclude]</MCFont>). Once enabled, it can be disabled by using the button again.
 
 ## Settings
 The <MCFont color="aqua">[Settings...]</MCFont> button opens another menu:<br></br>

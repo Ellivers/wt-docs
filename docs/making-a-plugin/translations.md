@@ -33,7 +33,7 @@ If you already have completed the language as a plugin, you can also open a [pul
 
 To begin, make a function file that sets the `Language` value to an appropriate ID, copy-paste all translations from the default `worldtool:language/en_us` function and translate them.
 
-To allow other plugins to utilize your language, add a function tag to your plugin and call it at the bottom of the function. To ensure that custom translations that other plguins add are displayed correctly, call the [hook](hooks#languageen_us) for the default WorldTool `en_us` language above your own function tag.
+To allow other plugins to utilize your language, add a function tag to your plugin and call it at the bottom of the function. To ensure that custom translations added by other plugins are displayed correctly, call the [hook](hooks#languageen_us) for the default WorldTool `en_us` language above your own function tag.
 
 ```mcfunction
 # Example language

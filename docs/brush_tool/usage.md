@@ -25,7 +25,7 @@ Actions made with the Brush Tool cannot be undone. This is due to no backups bei
 ## Brush Options
 Each brush has different options that appear in the menu. Some **common brush options** are:
 #
-* ­<MCFont color="green">[Update Block]</MCFont> - `On` or `Off`. Updates the [process block](../technical/processes) each time the brush is used. This can provide a small speed boost to your brush usage, but you probably want this enabled if you don't want to keep track of what block is currently being stored.
+* ­<MCFont color="green">[Update Block]</MCFont> - `On` or `Off`. Updates the [process block](../technical/processes) each time the brush is used. Disabling this can provide a small speed boost to your brush usage, but you probably want this enabled if you don't want to keep track of what block is currently being stored.
 * ­<MCFont color="blue">[Placement]</MCFont> - `In Block` or `On Block`. Decides what block the brush should start from; inside the targeted block or on the targeted block. Here's an image to help explain:<br></br>
   ![[The two brush placement options]](img/placement_explanation.png)
 * ­<MCFont color="dark_purple">[Flat]</MCFont> - `On` or `Off`. Toggles placing blocks in a flat square area instead of a cubic one. When this option is on, the <MCFont color="gold">Axis</MCFont> option also appears.

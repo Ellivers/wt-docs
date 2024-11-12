@@ -52,10 +52,12 @@ Use the [`process_start/common/setup_process` hook](hooks#process_startcommonset
 # Tell the function that sets up all the processes that everything is alright
 scoreboard players set #success worldtool 1
 
+# Set the data for the process
 data modify storage worldtool:storage Processes prepend value {ProcessName:'{"nbt":"Translation.\"myplugin.process.example\"","storage":"worldtool:storage"}',ID:"myplugin:example",Tags:["myplugin.process.example"]}
 # If you have set up blocks per tick data for this process
 data modify storage worldtool:storage Processes[0].BlocksPerTick set from storage worldtool:storage BlocksPerTick.Processes[{ID:"myplugin:example"}]
 
+# General data that all processes share
 function worldtool:process_start/general/set_process_values
 
 # Remove the setup tag
